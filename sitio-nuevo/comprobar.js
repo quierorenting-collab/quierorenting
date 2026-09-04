@@ -50,7 +50,21 @@ if (!bruto) {
   process.exit(2);
 }
 const CARS = eval(bruto[1]);
-const precioDe = new Map(CARS.map((c) => [(c.b + " " + c.m).toLowerCase(), c.p]));
+/**
+ * Precio por modelo. Guarda el MAS BARATO de sus versiones, no una cualquiera.
+ *
+ * Esto no es un detalle: el catalogo tiene dos SEAT Ibiza (80 CV a 263 € y
+ * 115 CV a 300 €) y dos Ebro S400 (Excellence 438 y Premium 488). La primera
+ * version de este fichero se quedaba con la version que le tocara del array y
+ * daba por descuadradas dos landings que estaban BIEN, porque su "desde"
+ * apunta —correctamente— a la version mas barata.
+ */
+const precioDe = new Map();
+for (const c of CARS) {
+  const clave = (c.b + " " + c.m).toLowerCase();
+  const previo = precioDe.get(clave);
+  if (c.p > 0 && (previo === undefined || c.p < previo)) precioDe.set(clave, c.p);
+}
 const precioMinimo = Math.min(...CARS.map((c) => c.p).filter((p) => p > 0));
 
 /** Busca en un texto el nombre de UN solo coche del catalogo. */
@@ -138,7 +152,7 @@ for (const rel of paginas) {
     const coche = cocheMencionado(texto);
     if (coche) {
       if (coche[1] !== cifra) {
-        fallo(rel, `${donde} dice ${pm[1]} € para el ${coche[0]}, y el catálogo dice ${coche[1]} €`);
+        fallo(rel, `${donde} dice ${pm[1]} € para el ${coche[0]}, y la versión más barata del catálogo está en ${coche[1]} €`);
       }
       continue;
     }
