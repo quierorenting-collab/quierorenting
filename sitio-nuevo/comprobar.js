@@ -67,6 +67,26 @@ for (const c of CARS) {
 }
 const precioMinimo = Math.min(...CARS.map((c) => c.p).filter((p) => p > 0));
 
+/** slug de landing -> precio de su coche (el mas barato si hay varias versiones). */
+const precioPorSlug = new Map();
+{
+  const norm = (x) => x.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "")
+    .replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+  for (const c of CARS) {
+    if (!(c.p > 0)) continue;
+    const claves = new Set([
+      "renting-" + norm(c.b + "-" + c.m),
+      "renting-" + norm(c.b.split("-")[0] + "-" + c.m),
+      // "GLC Coupe" y "GLE Coupe" viven en /renting-mercedes-glc/ y /-gle/.
+      "renting-" + norm(c.b.split("-")[0] + "-" + c.m.split(" ")[0]),
+    ]);
+    for (const k of claves) {
+      const prev = precioPorSlug.get(k);
+      if (prev === undefined || c.p < prev) precioPorSlug.set(k, c.p);
+    }
+  }
+}
+
 /** Busca en un texto el nombre de UN solo coche del catalogo. */
 function cocheMencionado(texto) {
   const t = texto.toLowerCase();
@@ -163,6 +183,21 @@ for (const rel of paginas) {
       fallo(rel, `${donde} anuncia "desde ${pm[1]} €" y el coche más barato del catálogo está en ${precioMinimo} €`);
     }
   }
+
+  // 6bis. Las tarjetas de "tambien te puede interesar" llevan el precio de OTRO
+  //       coche, y ese precio no se actualiza cuando cambia el del coche citado.
+  //       Paso el 04/09/2026: al corregir el Corsa, el 208 y el Mokka se arreglo
+  //       SU ficha y quedaron 36 tarjetas repartidas por 23 paginas con los
+  //       precios viejos. Aqui se comprueba contra el catalogo.
+  [...t.matchAll(/<div class="card-price">([\d.]+)€[\s\S]{0,900}?href="\/(renting-[a-z0-9-]+)\/" class="card-link"/g)]
+    .forEach((m) => {
+      const cifra = Number(m[1].replace(/\./g, ""));
+      const bueno = precioPorSlug.get(m[2]);
+      if (bueno === undefined) { aviso(rel, `una tarjeta enlaza a /${m[2]}/ y no sé de qué coche es`); return; }
+      if (cifra !== bueno) {
+        fallo(rel, `la tarjeta de /${m[2]}/ dice ${m[1]} € y el catálogo dice ${bueno} €`);
+      }
+    });
 
   // 7. Los enlaces internos llevan a algun sitio.
   [...soloHtml.matchAll(/href="\/([a-z0-9-]+)\/"/g)].forEach((m) => {
