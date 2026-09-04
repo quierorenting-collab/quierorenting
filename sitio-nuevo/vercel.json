@@ -1,16 +1,6 @@
 {
  "redirects": [
   {
-   "source": "/renting-alfa-romeo-junior",
-   "destination": "/",
-   "permanent": false
-  },
-  {
-   "source": "/renting-alfa-romeo-junior/",
-   "destination": "/",
-   "permanent": false
-  },
-  {
    "source": "/renting-audi-a3-sportback",
    "destination": "/",
    "permanent": false
@@ -167,16 +157,6 @@
   },
   {
    "source": "/renting-kia-stonic/",
-   "destination": "/",
-   "permanent": false
-  },
-  {
-   "source": "/renting-maserati-grecale",
-   "destination": "/",
-   "permanent": false
-  },
-  {
-   "source": "/renting-maserati-grecale/",
    "destination": "/",
    "permanent": false
   },
