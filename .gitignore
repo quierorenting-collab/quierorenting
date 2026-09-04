@@ -1,0 +1,12 @@
+# Credenciales y estado local: nunca al historial.
+.env
+.env.*
+**/.env
+**/.env.*
+.vercel
+**/.vercel
+
+# Basura del sistema
+Thumbs.db
+desktop.ini
+.DS_Store

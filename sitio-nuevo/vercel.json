@@ -1,0 +1,538 @@
+{
+ "redirects": [
+  {
+   "source": "/renting-alfa-romeo-junior",
+   "destination": "/",
+   "permanent": false
+  },
+  {
+   "source": "/renting-alfa-romeo-junior/",
+   "destination": "/",
+   "permanent": false
+  },
+  {
+   "source": "/renting-audi-a3-sportback",
+   "destination": "/",
+   "permanent": false
+  },
+  {
+   "source": "/renting-audi-a3-sportback/",
+   "destination": "/",
+   "permanent": false
+  },
+  {
+   "source": "/renting-citroen-c4",
+   "destination": "/",
+   "permanent": false
+  },
+  {
+   "source": "/renting-citroen-c4/",
+   "destination": "/",
+   "permanent": false
+  },
+  {
+   "source": "/renting-dacia-sandero",
+   "destination": "/",
+   "permanent": false
+  },
+  {
+   "source": "/renting-dacia-sandero/",
+   "destination": "/",
+   "permanent": false
+  },
+  {
+   "source": "/renting-ebro-s700",
+   "destination": "/",
+   "permanent": false
+  },
+  {
+   "source": "/renting-ebro-s700/",
+   "destination": "/",
+   "permanent": false
+  },
+  {
+   "source": "/renting-ebro-s800-phev",
+   "destination": "/",
+   "permanent": false
+  },
+  {
+   "source": "/renting-ebro-s800-phev/",
+   "destination": "/",
+   "permanent": false
+  },
+  {
+   "source": "/renting-electrico",
+   "destination": "/",
+   "permanent": false
+  },
+  {
+   "source": "/renting-electrico/",
+   "destination": "/",
+   "permanent": false
+  },
+  {
+   "source": "/renting-fiat-ducato",
+   "destination": "/",
+   "permanent": false
+  },
+  {
+   "source": "/renting-fiat-ducato/",
+   "destination": "/",
+   "permanent": false
+  },
+  {
+   "source": "/renting-ford-puma",
+   "destination": "/",
+   "permanent": false
+  },
+  {
+   "source": "/renting-ford-puma/",
+   "destination": "/",
+   "permanent": false
+  },
+  {
+   "source": "/renting-foton-tunland",
+   "destination": "/",
+   "permanent": false
+  },
+  {
+   "source": "/renting-foton-tunland/",
+   "destination": "/",
+   "permanent": false
+  },
+  {
+   "source": "/renting-hyundai-kona",
+   "destination": "/",
+   "permanent": false
+  },
+  {
+   "source": "/renting-hyundai-kona/",
+   "destination": "/",
+   "permanent": false
+  },
+  {
+   "source": "/renting-jeep-avenger",
+   "destination": "/",
+   "permanent": false
+  },
+  {
+   "source": "/renting-jeep-avenger/",
+   "destination": "/",
+   "permanent": false
+  },
+  {
+   "source": "/renting-kgm-korando",
+   "destination": "/",
+   "permanent": false
+  },
+  {
+   "source": "/renting-kgm-korando/",
+   "destination": "/",
+   "permanent": false
+  },
+  {
+   "source": "/renting-kgm-musso",
+   "destination": "/",
+   "permanent": false
+  },
+  {
+   "source": "/renting-kgm-musso/",
+   "destination": "/",
+   "permanent": false
+  },
+  {
+   "source": "/renting-kgm-rexton",
+   "destination": "/",
+   "permanent": false
+  },
+  {
+   "source": "/renting-kgm-rexton/",
+   "destination": "/",
+   "permanent": false
+  },
+  {
+   "source": "/renting-kgm-tivoli",
+   "destination": "/",
+   "permanent": false
+  },
+  {
+   "source": "/renting-kgm-tivoli/",
+   "destination": "/",
+   "permanent": false
+  },
+  {
+   "source": "/renting-kia-stonic",
+   "destination": "/",
+   "permanent": false
+  },
+  {
+   "source": "/renting-kia-stonic/",
+   "destination": "/",
+   "permanent": false
+  },
+  {
+   "source": "/renting-maserati-grecale",
+   "destination": "/",
+   "permanent": false
+  },
+  {
+   "source": "/renting-maserati-grecale/",
+   "destination": "/",
+   "permanent": false
+  },
+  {
+   "source": "/renting-maxus-deliver-9",
+   "destination": "/",
+   "permanent": false
+  },
+  {
+   "source": "/renting-maxus-deliver-9/",
+   "destination": "/",
+   "permanent": false
+  },
+  {
+   "source": "/renting-maxus-t60-max",
+   "destination": "/",
+   "permanent": false
+  },
+  {
+   "source": "/renting-maxus-t60-max/",
+   "destination": "/",
+   "permanent": false
+  },
+  {
+   "source": "/renting-mazda-3",
+   "destination": "/",
+   "permanent": false
+  },
+  {
+   "source": "/renting-mazda-3/",
+   "destination": "/",
+   "permanent": false
+  },
+  {
+   "source": "/renting-mazda-6e",
+   "destination": "/",
+   "permanent": false
+  },
+  {
+   "source": "/renting-mazda-6e/",
+   "destination": "/",
+   "permanent": false
+  },
+  {
+   "source": "/renting-mazda-cx-5",
+   "destination": "/",
+   "permanent": false
+  },
+  {
+   "source": "/renting-mazda-cx-5/",
+   "destination": "/",
+   "permanent": false
+  },
+  {
+   "source": "/renting-mercedes-citan-mixta",
+   "destination": "/",
+   "permanent": false
+  },
+  {
+   "source": "/renting-mercedes-citan-mixta/",
+   "destination": "/",
+   "permanent": false
+  },
+  {
+   "source": "/renting-mercedes-gla",
+   "destination": "/",
+   "permanent": false
+  },
+  {
+   "source": "/renting-mercedes-gla/",
+   "destination": "/",
+   "permanent": false
+  },
+  {
+   "source": "/renting-mercedes-vito",
+   "destination": "/",
+   "permanent": false
+  },
+  {
+   "source": "/renting-mercedes-vito/",
+   "destination": "/",
+   "permanent": false
+  },
+  {
+   "source": "/renting-mg-3",
+   "destination": "/",
+   "permanent": false
+  },
+  {
+   "source": "/renting-mg-3/",
+   "destination": "/",
+   "permanent": false
+  },
+  {
+   "source": "/renting-mg-zs",
+   "destination": "/",
+   "permanent": false
+  },
+  {
+   "source": "/renting-mg-zs/",
+   "destination": "/",
+   "permanent": false
+  },
+  {
+   "source": "/renting-mitsubishi-outlander",
+   "destination": "/",
+   "permanent": false
+  },
+  {
+   "source": "/renting-mitsubishi-outlander/",
+   "destination": "/",
+   "permanent": false
+  },
+  {
+   "source": "/renting-nissan-x-trail",
+   "destination": "/",
+   "permanent": false
+  },
+  {
+   "source": "/renting-nissan-x-trail/",
+   "destination": "/",
+   "permanent": false
+  },
+  {
+   "source": "/renting-omoda-9",
+   "destination": "/",
+   "permanent": false
+  },
+  {
+   "source": "/renting-omoda-9/",
+   "destination": "/",
+   "permanent": false
+  },
+  {
+   "source": "/renting-opel-combo",
+   "destination": "/",
+   "permanent": false
+  },
+  {
+   "source": "/renting-opel-combo/",
+   "destination": "/",
+   "permanent": false
+  },
+  {
+   "source": "/renting-peugeot-partner",
+   "destination": "/",
+   "permanent": false
+  },
+  {
+   "source": "/renting-peugeot-partner/",
+   "destination": "/",
+   "permanent": false
+  },
+  {
+   "source": "/renting-renault-austral",
+   "destination": "/",
+   "permanent": false
+  },
+  {
+   "source": "/renting-renault-austral/",
+   "destination": "/",
+   "permanent": false
+  },
+  {
+   "source": "/renting-renault-captur",
+   "destination": "/",
+   "permanent": false
+  },
+  {
+   "source": "/renting-renault-captur/",
+   "destination": "/",
+   "permanent": false
+  },
+  {
+   "source": "/renting-renault-espace",
+   "destination": "/",
+   "permanent": false
+  },
+  {
+   "source": "/renting-renault-espace/",
+   "destination": "/",
+   "permanent": false
+  },
+  {
+   "source": "/renting-renault-rafale",
+   "destination": "/",
+   "permanent": false
+  },
+  {
+   "source": "/renting-renault-rafale/",
+   "destination": "/",
+   "permanent": false
+  },
+  {
+   "source": "/renting-renault-symbioz",
+   "destination": "/",
+   "permanent": false
+  },
+  {
+   "source": "/renting-renault-symbioz/",
+   "destination": "/",
+   "permanent": false
+  },
+  {
+   "source": "/renting-seat-arona",
+   "destination": "/",
+   "permanent": false
+  },
+  {
+   "source": "/renting-seat-arona/",
+   "destination": "/",
+   "permanent": false
+  },
+  {
+   "source": "/renting-skoda-elroq",
+   "destination": "/",
+   "permanent": false
+  },
+  {
+   "source": "/renting-skoda-elroq/",
+   "destination": "/",
+   "permanent": false
+  },
+  {
+   "source": "/renting-skoda-karoq",
+   "destination": "/",
+   "permanent": false
+  },
+  {
+   "source": "/renting-skoda-karoq/",
+   "destination": "/",
+   "permanent": false
+  },
+  {
+   "source": "/renting-skoda-octavia",
+   "destination": "/",
+   "permanent": false
+  },
+  {
+   "source": "/renting-skoda-octavia/",
+   "destination": "/",
+   "permanent": false
+  },
+  {
+   "source": "/renting-subaru-crosstrek",
+   "destination": "/",
+   "permanent": false
+  },
+  {
+   "source": "/renting-subaru-crosstrek/",
+   "destination": "/",
+   "permanent": false
+  },
+  {
+   "source": "/renting-subaru-forester",
+   "destination": "/",
+   "permanent": false
+  },
+  {
+   "source": "/renting-subaru-forester/",
+   "destination": "/",
+   "permanent": false
+  },
+  {
+   "source": "/renting-subaru-outback",
+   "destination": "/",
+   "permanent": false
+  },
+  {
+   "source": "/renting-subaru-outback/",
+   "destination": "/",
+   "permanent": false
+  },
+  {
+   "source": "/renting-toyota-proace",
+   "destination": "/",
+   "permanent": false
+  },
+  {
+   "source": "/renting-toyota-proace/",
+   "destination": "/",
+   "permanent": false
+  },
+  {
+   "source": "/renting-volkswagen-golf",
+   "destination": "/",
+   "permanent": false
+  },
+  {
+   "source": "/renting-volkswagen-golf/",
+   "destination": "/",
+   "permanent": false
+  },
+  {
+   "source": "/renting-volkswagen-t-cross",
+   "destination": "/",
+   "permanent": false
+  },
+  {
+   "source": "/renting-volkswagen-t-cross/",
+   "destination": "/",
+   "permanent": false
+  },
+  {
+   "source": "/renting-volkswagen-t-roc",
+   "destination": "/",
+   "permanent": false
+  },
+  {
+   "source": "/renting-volkswagen-t-roc/",
+   "destination": "/",
+   "permanent": false
+  }
+ ],
+ "headers": [
+  {
+   "source": "/(.*)",
+   "headers": [
+    {
+     "key": "Content-Security-Policy",
+     "value": "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://fotos.quecochemecompro.com; media-src 'self'; connect-src 'self'; form-action 'self'; frame-ancestors 'none'; base-uri 'self'; object-src 'none'; upgrade-insecure-requests"
+    },
+    {
+     "key": "X-Content-Type-Options",
+     "value": "nosniff"
+    },
+    {
+     "key": "Referrer-Policy",
+     "value": "strict-origin-when-cross-origin"
+    },
+    {
+     "key": "X-Frame-Options",
+     "value": "DENY"
+    },
+    {
+     "key": "Permissions-Policy",
+     "value": "camera=(), microphone=(), geolocation=(), payment=(), usb=()"
+    },
+    {
+     "key": "Strict-Transport-Security",
+     "value": "max-age=63072000; includeSubDomains; preload"
+    }
+   ]
+  },
+  {
+   "source": "/api/(.*)",
+   "headers": [
+    {
+     "key": "Cache-Control",
+     "value": "no-store, max-age=0"
+    },
+    {
+     "key": "X-Content-Type-Options",
+     "value": "nosniff"
+    }
+   ]
+  }
+ ]
+}
