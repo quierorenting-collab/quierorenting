@@ -241,16 +241,6 @@
    "permanent": false
   },
   {
-   "source": "/renting-mercedes-gla",
-   "destination": "/",
-   "permanent": false
-  },
-  {
-   "source": "/renting-mercedes-gla/",
-   "destination": "/",
-   "permanent": false
-  },
-  {
    "source": "/renting-mercedes-vito",
    "destination": "/",
    "permanent": false
