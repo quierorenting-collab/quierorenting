@@ -1,0 +1,6 @@
+# Los HTML de este sitio estan guardados con CRLF y se publican tal cual.
+# Sin esto git los normaliza a LF al indexarlos y el siguiente diff sale
+# entero como cambiado, que hace ilegible cualquier revision.
+*.html -text
+*.js   -text
+*.json -text
