@@ -181,12 +181,66 @@ h1,h2,h3,.hero-title,.sec-header h2,.nav-logo,.logo,.footer-logo{
     transition-duration:.01ms!important;scroll-behavior:auto!important
   }
 }
+
+/* ---- Menu de navegacion (bloque autocontenido, prefijo qr-) ---------------
+   Prefijo propio porque la home y las 36 landings tienen cabeceras y hojas de
+   estilo distintas, y cada fichero lleva su copia. Los colores NO son
+   inventados: estan leidos de la propia web (logo #0068ff, texto secundario
+   #6b7280, cabecera blanca al 93 %, pie #111827). */
+.qr-menu{display:flex;align-items:center;gap:24px;margin:0 26px 0 34px}
+.qr-menu a{color:#4b5563;text-decoration:none;font-size:13.5px;font-weight:600;
+  letter-spacing:.01em;white-space:nowrap;padding:7px 0;
+  border-bottom:2px solid transparent;transition:color .18s,border-color .18s}
+.qr-menu a:hover{color:#0068ff}
+.qr-menu a:focus-visible{color:#0068ff;outline:2px solid #0068ff;outline-offset:3px;border-radius:3px}
+.qr-menu a[aria-current="page"]{color:#0068ff;border-bottom-color:#0068ff}
+.qr-menu-btn{display:none;background:transparent;border:1px solid rgba(17,24,39,.16);
+  border-radius:9px;color:#111827;width:42px;height:42px;cursor:pointer;
+  align-items:center;justify-content:center;padding:0;margin-left:auto;margin-right:12px}
+.qr-menu-btn:focus-visible{outline:2px solid #0068ff;outline-offset:2px}
+.qr-menu-btn svg{width:19px;height:19px}
+@media(max-width:980px){
+  .qr-menu-btn{display:inline-flex}
+  .qr-menu{position:absolute;top:100%;left:0;right:0;flex-direction:column;
+    align-items:stretch;gap:0;margin:0;padding:6px 20px 14px;
+    background:#fff;border-top:1px solid rgba(17,24,39,.09);
+    box-shadow:0 20px 40px rgba(17,24,39,.13);display:none;z-index:60}
+  .qr-menu.qr-abierto{display:flex}
+  /* 48px de alto: por debajo de 44 un dedo falla, y aqui se navega en movil. */
+  .qr-menu a{padding:14px 2px;min-height:48px;display:flex;align-items:center;
+    border-bottom:1px solid rgba(17,24,39,.07);border-radius:0;font-size:15px}
+  .qr-menu a:hover,.qr-menu a:focus-visible{border-bottom-color:rgba(17,24,39,.07)}
+}
+/* ---- Pie con toda la navegacion interna, ahora visible -------------------
+   Antes estos enlaces vivian en en un contenedor oculto. Ensenarle a
+   Google enlaces que la persona no ve es texto oculto, y Google lo sanciona. */
+.qr-pie{max-width:1180px;margin:44px auto 0;padding:34px 22px 4px;
+  border-top:1px solid rgba(255,255,255,.09);display:grid;gap:30px;
+  grid-template-columns:repeat(auto-fit,minmax(210px,1fr));text-align:left}
+.qr-pie h3{margin:0 0 13px;font-size:11px;font-weight:800;letter-spacing:.11em;
+  text-transform:uppercase;color:rgba(255,255,255,.56)}
+.qr-pie ul{list-style:none;margin:0;padding:0}
+.qr-pie li{margin:0 0 9px}
+.qr-pie a{color:rgba(255,255,255,.66);text-decoration:none;font-size:13px;line-height:1.5}
+.qr-pie a:hover{color:#fff;text-decoration:underline}
+.qr-pie a:focus-visible{color:#fff;outline:2px solid #5aa0ff;outline-offset:2px;border-radius:3px}
+.qr-pie a[aria-current="page"]{color:#fff;font-weight:700}
+@media(min-width:720px){.qr-pie .qr-col-modelos ul{columns:2;column-gap:22px}}
 </style>
 </head>
 <body>
 
-<nav class="nav">
+<nav class="nav" style="position:relative">
   <a href="https://quierorenting.es/" class="logo">quiero<span>renting</span><span class="by-ml">by <b>MoviLease</b></span></a>
+<button class="qr-menu-btn" type="button" aria-expanded="false" aria-controls="qr-menu" aria-label="Abrir menú"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button>
+<div class="qr-menu" id="qr-menu">
+<a href="/#ofertas">Ofertas</a>
+<a href="/#catalogo">Todos los coches</a>
+<a href="/renting-barato/">Baratos</a>
+<a href="/renting-suv/">SUV</a>
+<a href="/renting-furgoneta/">Furgonetas</a>
+</div>
+
   <a href="https://wa.me/34644156797?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20renting%20de%20coches%20en%20Madrid" class="nav-cta" target="_blank">📲 Pedir info en Madrid</a>
 </nav>
 
@@ -316,7 +370,68 @@ h1,h2,h3,.hero-title,.sec-header h2,.nav-logo,.logo,.footer-logo{
   <a class="footer-ml" href="https://movilease.es" target="_blank" rel="noopener"><span>Una marca de</span><img src="/fotos/movilease-logo.png" alt="MoviLease" width="220" height="47" loading="lazy"></a>
   <p>© 2025 <a href="https://quierorenting.es/">Quiero Renting</a> · Renting de coches para particulares · Toda España</p>
   <p style="margin-top:5px">📞 <a href="tel:+34644156797">+34644156797</a> · 💬 <a href="https://wa.me/34644156797">WhatsApp</a> · 📷 <a href="https://www.instagram.com/quierorenting">@quierorenting</a></p>
+
+<nav class="qr-pie" aria-label="Todas las secciones">
+<div class="qr-col-modelos"><h3>Coches en renting</h3><ul>
+<li><a href="/renting-seat-ibiza/">SEAT Ibiza</a></li>
+<li><a href="/renting-peugeot-208/">Peugeot 208</a></li>
+<li><a href="/renting-opel-corsa/">Opel Corsa</a></li>
+<li><a href="/renting-volkswagen-polo/">Volkswagen Polo</a></li>
+<li><a href="/renting-toyota-yaris/">Toyota Yaris</a></li>
+<li><a href="/renting-toyota-yaris-cross/">Toyota Yaris Cross</a></li>
+<li><a href="/renting-opel-mokka/">Opel Mokka</a></li>
+<li><a href="/renting-mazda-cx-30/">Mazda CX-30</a></li>
+<li><a href="/renting-nissan-juke/">Nissan Juke</a></li>
+<li><a href="/renting-volkswagen-taigo/">Volkswagen Taigo</a></li>
+<li><a href="/renting-nissan-qashqai/">Nissan Qashqai</a></li>
+<li><a href="/renting-hyundai-tucson/">Hyundai Tucson</a></li>
+<li><a href="/renting-volkswagen-tiguan/">Volkswagen Tiguan</a></li>
+<li><a href="/renting-mercedes-glc/">Mercedes GLC</a></li>
+<li><a href="/renting-mercedes-gle/">Mercedes GLE</a></li>
+<li><a href="/renting-mercedes-citan/">Mercedes Citan</a></li>
+<li><a href="/renting-ebro-s400/">Ebro S400</a></li>
+<li><a href="/renting-peugeot-boxer/">Peugeot Boxer</a></li>
+<li><a href="/renting-nissan-interstar/">Nissan Interstar</a></li>
+</ul></div>
+<div><h3>Por tipo</h3><ul>
+<li><a href="/renting-barato/">Renting barato</a></li>
+<li><a href="/renting-automatico/">Automáticos</a></li>
+<li><a href="/renting-hibrido/">Híbridos</a></li>
+<li><a href="/renting-suv/">SUV</a></li>
+<li><a href="/renting-furgoneta/">Furgonetas</a></li>
+</ul></div>
+<div><h3>Por ciudad</h3><ul>
+<li><a href="/renting-coches-alicante/">Alicante</a></li>
+<li><a href="/renting-coches-barcelona/">Barcelona</a></li>
+<li><a href="/renting-coches-bilbao/">Bilbao</a></li>
+<li><a href="/renting-coches-las-palmas/">Las Palmas</a></li>
+<li><a href="/renting-coches-madrid/" aria-current="page">Madrid</a></li>
+<li><a href="/renting-coches-malaga/">Málaga</a></li>
+<li><a href="/renting-coches-murcia/">Murcia</a></li>
+<li><a href="/renting-coches-palma/">Palma</a></li>
+<li><a href="/renting-coches-sevilla/">Sevilla</a></li>
+<li><a href="/renting-coches-valencia/">Valencia</a></li>
+<li><a href="/renting-coches-valladolid/">Valladolid</a></li>
+<li><a href="/renting-coches-zaragoza/">Zaragoza</a></li>
+</ul></div>
+</nav>
 </footer>
 
+
+<script>
+/* Menu movil. Sin librerias y con el estado en aria-expanded, que es lo que
+   leen los lectores de pantalla; la clase solo pinta. */
+;(function(){
+  var b=document.querySelector('.qr-menu-btn'), m=document.getElementById('qr-menu');
+  if(!b||!m) return;
+  function cerrar(){ m.classList.remove('qr-abierto'); b.setAttribute('aria-expanded','false'); }
+  b.addEventListener('click',function(){
+    var abierto=m.classList.toggle('qr-abierto');
+    b.setAttribute('aria-expanded', abierto ? 'true' : 'false');
+  });
+  document.addEventListener('keydown',function(e){ if(e.key==='Escape') cerrar(); });
+  m.addEventListener('click',function(e){ if(e.target.tagName==='A') cerrar(); });
+})();
+</script>
 </body>
 </html>

@@ -116,6 +116,10 @@ async function avisarPorCorreo(clave, lead) {
       Fecha: lead.fecha,
       "Página": lead.pagina,
       Origen: "quierorenting.es",
+      // Prueba del consentimiento. El RGPD no pide solo recogerlo: pide poder
+      // demostrar después que se recogió (art. 7.1). Si solo vive en una casilla
+      // marcada en un navegador que ya se cerró, no hay nada que enseñar.
+      Consentimiento: "Aceptada la política de privacidad el " + lead.fecha,
     }),
   });
   if (!r.ok) throw new Error("web3forms " + r.status);
@@ -136,7 +140,8 @@ async function avisarPorTelegram(token, chatId, lead) {
         "Teléfono: " + lead.telefono + "\n" +
         "Email: " + (lead.email || "No indicado") + "\n" +
         "Fecha: " + lead.fecha + "\n" +
-        "Página: " + lead.pagina,
+        "Página: " + lead.pagina + "\n" +
+        "Consentimiento: aceptado",
       disable_web_page_preview: true,
     }),
   });
