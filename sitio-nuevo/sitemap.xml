@@ -103,6 +103,24 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://quierorenting.es/aviso-legal/</loc>
+    <lastmod>2026-06-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://quierorenting.es/politica-de-privacidad/</loc>
+    <lastmod>2026-06-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://quierorenting.es/politica-de-cookies/</loc>
+    <lastmod>2026-06-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://quierorenting.es/renting-nissan-juke/</loc>
     <lastmod>2026-06-18</lastmod>
     <changefreq>monthly</changefreq>
