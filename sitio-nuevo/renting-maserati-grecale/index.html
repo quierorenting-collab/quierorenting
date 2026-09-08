@@ -264,6 +264,68 @@ h1,h2,h3,.hero-title,.sec-header h2,.nav-logo,.logo,.footer-logo{
 .qr-pie a:focus-visible{color:#fff;outline:2px solid #5aa0ff;outline-offset:2px;border-radius:3px}
 .qr-pie a[aria-current="page"]{color:#fff;font-weight:700}
 @media(min-width:720px){.qr-pie .qr-col-modelos ul{columns:2;column-gap:22px}}
+
+/* Formulario de solicitud de la ficha. Hasta este cambio, desde una ficha solo
+   se podia contactar por WhatsApp; el unico formulario estaba en el popup de
+   la portada. Fondo claro porque las fichas lo son, al reves que la portada. */
+.sol{max-width:900px;margin:32px auto 0;padding:0 20px}
+.sol-caja{background:#fff;border:1px solid #e6eaf1;border-radius:16px;padding:26px 24px;box-shadow:0 2px 10px rgba(16,24,40,.05)}
+.sol-ttl{font-size:1.3rem;font-weight:800;margin:0 0 6px;color:#0f172a;line-height:1.25}
+.sol-sub{margin:0 0 18px;color:#5b6472;font-size:.95rem;line-height:1.5}
+.sol-form{display:grid;gap:13px}
+.sol-lbl{display:block;font-size:.76rem;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:#5b6472;margin-bottom:6px}
+.sol-opc{font-weight:400;text-transform:none;letter-spacing:0;opacity:.75}
+.sol-inp{width:100%;box-sizing:border-box;padding:12px 14px;border:1px solid #dfe3ea;border-radius:10px;font-size:1rem;font-family:inherit;background:#fff;color:#1a1a1a}
+.sol-inp:focus{outline:2px solid #0068ff;outline-offset:1px;border-color:#0068ff}
+.sol-hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+.sol-priv{display:flex;gap:9px;align-items:flex-start;font-size:.85rem;color:#5b6472;line-height:1.45}
+.sol-priv input{margin-top:3px;accent-color:#0068ff;flex-shrink:0}
+.sol-priv a{color:#0068ff;text-decoration:underline}
+.sol-btn{background:#0068ff;color:#fff;border:0;border-radius:12px;padding:15px;font-size:1.02rem;font-weight:700;font-family:inherit;cursor:pointer;transition:background .2s}
+.sol-btn:hover{background:#0052cc}
+.sol-btn[disabled]{opacity:.6;cursor:default}
+.sol-msg{margin:0;font-size:.88rem;color:#b42318;min-height:1.1em}
+.sol-alt{margin:0;font-size:.88rem;color:#5b6472}
+.sol-alt a{color:#128c4a;font-weight:600}
+.sol-ok{text-align:center;padding:16px 0}
+.sol-ok b{display:block;font-size:1.12rem;color:#0f172a;margin-bottom:6px}
+.sol-ok span{color:#5b6472;font-size:.94rem}
+@media(min-width:640px){.sol-form{grid-template-columns:1fr 1fr}.sol-ancho,.sol-priv,.sol-btn,.sol-msg,.sol-alt{grid-column:1/-1}}
+
+/* Cabecera de ficha: foto, nombre, cuota y contacto, antes que nada.
+   Antes la ficha abria con los cuadros genericos de "que incluye" y el coche no
+   aparecia por ningun lado; en movil eso son 800 px de scroll sin ver el
+   producto. */
+.fh{max-width:900px;margin:16px auto 0;padding:0 20px}
+.fh-caja{background:#fff;border:1px solid #e6eaf1;border-radius:18px;overflow:hidden;box-shadow:0 2px 12px rgba(16,24,40,.06)}
+.fh-foto{background:#f2f5f9;aspect-ratio:4/3;position:relative}
+.fh-foto img{width:100%;height:100%;object-fit:contain;display:block}
+.fh-cuerpo{padding:18px 20px 20px}
+.fh-marca{margin:0;font-size:.76rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#0068ff}
+.fh h1{font-size:clamp(1.55rem,6.4vw,2.1rem);margin:6px 0 4px;line-height:1.15;color:#0f172a;font-weight:800}
+.fh-version{margin:0 0 16px;color:#5b6472;font-size:.95rem;line-height:1.45}
+.fh-precio{display:flex;align-items:baseline;gap:7px;margin:0}
+.fh-precio b{font-size:2.15rem;line-height:1;color:#0f172a;font-weight:800}
+.fh-precio span{color:#5b6472;font-size:.95rem}
+.fh-nota{margin:6px 0 16px;color:#5b6472;font-size:.86rem}
+.fh-acc{display:grid;gap:10px}
+.fh-acc a{display:block;text-align:center;padding:15px 12px;border-radius:12px;font-weight:700;font-size:1rem;line-height:1.2}
+.fh-llamada{background:#0068ff;color:#fff}
+.fh-llamada:hover{background:#0052cc}
+.fh-wa{background:#25d366;color:#fff}
+.fh-wa:hover{background:#1eb85a}
+@media(min-width:760px){
+  .fh-caja{display:grid;grid-template-columns:1.05fr 1fr;align-items:stretch}
+  .fh-foto{aspect-ratio:auto;min-height:300px}
+  .fh-cuerpo{padding:26px 28px;align-self:center}
+  .fh-acc{grid-template-columns:1fr 1fr}
+}
+/* El boton del menu se partia en dos lineas a 375 px y se salia de su caja. */
+.nav-cta{white-space:nowrap}
+@media(max-width:430px){
+  .nav{padding:12px 14px;gap:8px}
+  .nav-cta{padding:9px 12px;font-size:.82rem}
+}
 </style>
 <script type="application/ld+json">{
   "@context": "https://schema.org",
@@ -323,6 +385,23 @@ h1,h2,h3,.hero-title,.sec-header h2,.nav-logo,.logo,.footer-logo{
 
 
 
+<div class="fh">
+  <div class="fh-caja">
+    <div class="fh-foto"><img src="/fotos/maserati-grecale-01.webp" alt="Maserati Grecale en renting" width="800" height="600" fetchpriority="high"></div>
+    <div class="fh-cuerpo">
+      <p class="fh-marca">Maserati</p>
+      <h1>Renting Maserati Grecale para particulares</h1>
+      <p class="fh-version">L4 MHEV 300 CV AWD</p>
+      <p class="fh-precio"><span>desde</span><b>1.366€</b><span>/mes</span></p>
+      <p class="fh-nota">IVA incluido · Sin entrada · 10.000 km/año</p>
+      <div class="fh-acc">
+        <a class="fh-llamada" href="#solicitar">Quiero que me llamen</a>
+        <a class="fh-wa" href="https://wa.me/34644156797?text=Hola,%20me%20interesa%20el%20renting%20del%20Maserati%20Grecale.%20¿Me%20pasáis%20la%20cuota%20y%20las%20condiciones%3F" target="_blank" rel="noopener">Preguntar por WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</div>
+
 <div class="incl">
   <h2>¿Qué incluye el renting?</h2>
   <div class="incl-grid">
@@ -334,13 +413,49 @@ h1,h2,h3,.hero-title,.sec-header h2,.nav-logo,.logo,.footer-logo{
 </div>
 
 <div class="content-section">
-  <h1>Renting Maserati Grecale para particulares</h1>
+  
   <p>Un SUV perfecto para familias que buscan espacio y versatilidad en renting.</p>
   <p>Con el renting del <strong>Maserati Grecale</strong> pagas una cuota fija mensual desde <strong>1.366€/mes</strong> y olvídate del resto. Sin entrada, sin sorpresas: el seguro a todo riesgo, las revisiones, los neumáticos y la asistencia en carretera están incluidos en la cuota.</p>
   <p>En <strong>Quiero Renting</strong> gestionamos todo en menos de 48 horas. Solo necesitas el DNI y la última nómina. Sin complicaciones, sin trámites eternos.</p>
 </div>
 
 <a href="https://quierorenting.es/" class="back-link">← Ver todo el catálogo de renting</a>
+
+<div class="sol">
+  <div class="sol-caja">
+    <h2 class="sol-ttl">Pide tu oferta del Maserati Grecale</h2>
+    <p class="sol-sub">Déjanos tu teléfono y te llamamos con la cuota cerrada y las condiciones. Sin compromiso · Te llamamos en menos de 24 h.</p>
+    <form class="sol-form" id="sol-form" novalidate>
+      <div>
+        <label class="sol-lbl" for="sol-nombre">Nombre *</label>
+        <input class="sol-inp" id="sol-nombre" type="text" placeholder="Tu nombre" autocomplete="name" required>
+      </div>
+      <div>
+        <label class="sol-lbl" for="sol-tel">Teléfono *</label>
+        <input class="sol-inp" id="sol-tel" type="tel" placeholder="612 345 678" autocomplete="tel" required>
+      </div>
+      <div class="sol-ancho">
+        <label class="sol-lbl" for="sol-mail">Email <span class="sol-opc">(opcional)</span></label>
+        <input class="sol-inp" id="sol-mail" type="email" placeholder="tucorreo@email.com" autocomplete="email">
+      </div>
+      <div class="sol-hp" aria-hidden="true">
+        <label for="sol-web">No rellenar este campo</label>
+        <input type="text" id="sol-web" name="confirmar" tabindex="-1" autocomplete="off">
+      </div>
+      <label class="sol-priv">
+        <input type="checkbox" id="sol-chk" required>
+        <span>He leído y acepto la <a href="/politica-de-privacidad/" target="_blank" rel="noopener">Política de Privacidad</a></span>
+      </label>
+      <button class="sol-btn" id="sol-btn" type="submit">Quiero que me llamen</button>
+      <p class="sol-msg" id="sol-msg" role="status" aria-live="polite"></p>
+      <p class="sol-alt">¿Prefieres WhatsApp? <a href="https://wa.me/34644156797?text=Hola,%20me%20interesa%20el%20renting%20del%20Maserati%20Grecale.%20¿Me%20pasáis%20la%20cuota%20y%20las%20condiciones%3F" target="_blank" rel="noopener">Escríbenos</a></p>
+    </form>
+    <div class="sol-ok" id="sol-ok" hidden>
+      <b>Solicitud recibida</b>
+      <span>Te llamamos en menos de 24 h. Si te corre prisa, escríbenos por WhatsApp.</span>
+    </div>
+  </div>
+</div>
 
 <div class="section" style="margin-top:32px"><h2>También te puede interesar</h2><div class="grid"><div class="card">
   <a href="/renting-volkswagen-taigo/" class="card-img">
@@ -377,6 +492,7 @@ h1,h2,h3,.hero-title,.sec-header h2,.nav-logo,.logo,.footer-logo{
 <li><a href="/renting-toyota-yaris-cross/">Toyota Yaris Cross</a></li>
 <li><a href="/renting-opel-mokka/">Opel Mokka</a></li>
 <li><a href="/renting-mazda-cx-30/">Mazda CX-30</a></li>
+<li><a href="/renting-bmw-x1/">BMW X1</a></li>
 <li><a href="/renting-maserati-grecale/" aria-current="page">Maserati Grecale</a></li>
 <li><a href="/renting-citroen-berlingo/">Citroën Berlingo</a></li>
 <li><a href="/renting-alfa-romeo-junior/">Alfa Romeo Junior</a></li>
@@ -440,6 +556,73 @@ h1,h2,h3,.hero-title,.sec-header h2,.nav-logo,.logo,.footer-logo{
   });
   document.addEventListener('keydown',function(e){ if(e.key==='Escape') cerrar(); });
   m.addEventListener('click',function(e){ if(e.target.tagName==='A') cerrar(); });
+})();
+</script>
+<script>
+/* Envio del formulario de la ficha. Mismo destino y mismas reglas que el popup
+   de la portada: el servidor vuelve a validar todo, incluido el consentimiento,
+   porque una casilla marcada en el navegador no demuestra nada. */
+(function () {
+  var f = document.getElementById('sol-form');
+  if (!f) return;
+  var msg = document.getElementById('sol-msg');
+  var btn = document.getElementById('sol-btn');
+  var COCHE = "Maserati Grecale";
+
+  function fallo(m) {
+    msg.textContent = m;
+    btn.disabled = false;
+    btn.textContent = 'Quiero que me llamen';
+  }
+
+  f.addEventListener('submit', function (ev) {
+    ev.preventDefault();
+    msg.textContent = '';
+    var nombre = (document.getElementById('sol-nombre').value || '').trim();
+    var tel = (document.getElementById('sol-tel').value || '').trim();
+    var mail = (document.getElementById('sol-mail').value || '').trim();
+    var chk = document.getElementById('sol-chk');
+
+    if (nombre.length < 2) return fallo('Necesitamos tu nombre.');
+    /* Misma forma que valida el servidor: si no, el navegador deja pasar algo
+       que luego se rechaza y el usuario no entiende por que. */
+    if (!/^[+\d][\d\s.-]{6,20}$/.test(tel)) return fallo('Escribe un tel\u00e9fono v\u00e1lido.');
+    if (mail && mail.indexOf('@') < 1) return fallo('Ese email no parece v\u00e1lido.');
+    if (!chk.checked) {
+      chk.focus();
+      return fallo('Marca la casilla de la pol\u00edtica de privacidad para poder llamarte.');
+    }
+
+    btn.disabled = true;
+    btn.textContent = 'Enviando\u2026';
+    fetch('/api/lead', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        nombre: nombre,
+        telefono: tel,
+        email: mail,
+        rgpd: true,
+        confirmar: (document.getElementById('sol-web') || {}).value || '',
+        pagina: window.location.href,
+        coche: COCHE
+      })
+    })
+      .then(function (r) { return r.json().catch(function () { return { ok: false }; }); })
+      .then(function (d) {
+        /* La confirmacion solo si el servidor dice que salio: si no, el cliente
+           se iria creyendo que le van a llamar. */
+        if (d && d.ok) {
+          f.style.display = 'none';
+          document.getElementById('sol-ok').hidden = false;
+          return;
+        }
+        fallo((d && d.error) || 'No hemos podido enviarlo. Int\u00e9ntalo de nuevo o escr\u00edbenos por WhatsApp.');
+      })
+      .catch(function () {
+        fallo('No hemos podido enviarlo. Int\u00e9ntalo de nuevo o escr\u00edbenos por WhatsApp.');
+      });
+  });
 })();
 </script>
 </body>

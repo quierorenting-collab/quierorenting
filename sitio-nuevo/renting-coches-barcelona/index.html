@@ -226,6 +226,33 @@ h1,h2,h3,.hero-title,.sec-header h2,.nav-logo,.logo,.footer-logo{
 .qr-pie a:focus-visible{color:#fff;outline:2px solid #5aa0ff;outline-offset:2px;border-radius:3px}
 .qr-pie a[aria-current="page"]{color:#fff;font-weight:700}
 @media(min-width:720px){.qr-pie .qr-col-modelos ul{columns:2;column-gap:22px}}
+
+/* Formulario de solicitud de la ficha. Hasta este cambio, desde una ficha solo
+   se podia contactar por WhatsApp; el unico formulario estaba en el popup de
+   la portada. Fondo claro porque las fichas lo son, al reves que la portada. */
+.sol{max-width:900px;margin:32px auto 0;padding:0 20px}
+.sol-caja{background:#fff;border:1px solid #e6eaf1;border-radius:16px;padding:26px 24px;box-shadow:0 2px 10px rgba(16,24,40,.05)}
+.sol-ttl{font-size:1.3rem;font-weight:800;margin:0 0 6px;color:#0f172a;line-height:1.25}
+.sol-sub{margin:0 0 18px;color:#5b6472;font-size:.95rem;line-height:1.5}
+.sol-form{display:grid;gap:13px}
+.sol-lbl{display:block;font-size:.76rem;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:#5b6472;margin-bottom:6px}
+.sol-opc{font-weight:400;text-transform:none;letter-spacing:0;opacity:.75}
+.sol-inp{width:100%;box-sizing:border-box;padding:12px 14px;border:1px solid #dfe3ea;border-radius:10px;font-size:1rem;font-family:inherit;background:#fff;color:#1a1a1a}
+.sol-inp:focus{outline:2px solid #0068ff;outline-offset:1px;border-color:#0068ff}
+.sol-hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+.sol-priv{display:flex;gap:9px;align-items:flex-start;font-size:.85rem;color:#5b6472;line-height:1.45}
+.sol-priv input{margin-top:3px;accent-color:#0068ff;flex-shrink:0}
+.sol-priv a{color:#0068ff;text-decoration:underline}
+.sol-btn{background:#0068ff;color:#fff;border:0;border-radius:12px;padding:15px;font-size:1.02rem;font-weight:700;font-family:inherit;cursor:pointer;transition:background .2s}
+.sol-btn:hover{background:#0052cc}
+.sol-btn[disabled]{opacity:.6;cursor:default}
+.sol-msg{margin:0;font-size:.88rem;color:#b42318;min-height:1.1em}
+.sol-alt{margin:0;font-size:.88rem;color:#5b6472}
+.sol-alt a{color:#128c4a;font-weight:600}
+.sol-ok{text-align:center;padding:16px 0}
+.sol-ok b{display:block;font-size:1.12rem;color:#0f172a;margin-bottom:6px}
+.sol-ok span{color:#5b6472;font-size:.94rem}
+@media(min-width:640px){.sol-form{grid-template-columns:1fr 1fr}.sol-ancho,.sol-priv,.sol-btn,.sol-msg,.sol-alt{grid-column:1/-1}}
 </style>
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" href="/icon.png" type="image/png" sizes="512x512">
@@ -274,7 +301,7 @@ h1,h2,h3,.hero-title,.sec-header h2,.nav-logo,.logo,.footer-logo{
     <div class="card-spec">1.0 MPI 70kW 80CV</div>
     <div class="card-pills"><span class="pill">⛽ Gasolina</span><span class="pill">Manual</span><span class="pill">80 CV</span></div>
     <div class="card-footer">
-      <div class="card-price">300€<span>/mes</span></div>
+      <div class="card-price">275€<span>/mes</span></div>
       <a class="card-btn" href="https://wa.me/34644156797?text=Hola%2C%20quiero%20el%20SEAT%20Ibiza%20en%20renting%20en%20Barcelona" target="_blank">Lo quiero</a>
     </div>
   </div>
@@ -369,6 +396,42 @@ h1,h2,h3,.hero-title,.sec-header h2,.nav-logo,.logo,.footer-logo{
   <a href="https://quierorenting.es/">← Ver todo el catálogo</a>
 </div>
 
+<div class="sol">
+  <div class="sol-caja">
+    <h2 class="sol-ttl">Cuéntanos qué coche buscas</h2>
+    <p class="sol-sub">Déjanos tu teléfono y te llamamos con la cuota cerrada y las condiciones. Sin compromiso · Te llamamos en menos de 24 h.</p>
+    <form class="sol-form" id="sol-form" novalidate>
+      <div>
+        <label class="sol-lbl" for="sol-nombre">Nombre *</label>
+        <input class="sol-inp" id="sol-nombre" type="text" placeholder="Tu nombre" autocomplete="name" required>
+      </div>
+      <div>
+        <label class="sol-lbl" for="sol-tel">Teléfono *</label>
+        <input class="sol-inp" id="sol-tel" type="tel" placeholder="612 345 678" autocomplete="tel" required>
+      </div>
+      <div class="sol-ancho">
+        <label class="sol-lbl" for="sol-mail">Email <span class="sol-opc">(opcional)</span></label>
+        <input class="sol-inp" id="sol-mail" type="email" placeholder="tucorreo@email.com" autocomplete="email">
+      </div>
+      <div class="sol-hp" aria-hidden="true">
+        <label for="sol-web">No rellenar este campo</label>
+        <input type="text" id="sol-web" name="confirmar" tabindex="-1" autocomplete="off">
+      </div>
+      <label class="sol-priv">
+        <input type="checkbox" id="sol-chk" required>
+        <span>He leído y acepto la <a href="/politica-de-privacidad/" target="_blank" rel="noopener">Política de Privacidad</a></span>
+      </label>
+      <button class="sol-btn" id="sol-btn" type="submit">Quiero que me llamen</button>
+      <p class="sol-msg" id="sol-msg" role="status" aria-live="polite"></p>
+      <p class="sol-alt">¿Prefieres WhatsApp? <a href="https://wa.me/34644156797?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20renting%20de%20coches%20en%20Barcelona" target="_blank" rel="noopener">Escríbenos</a></p>
+    </form>
+    <div class="sol-ok" id="sol-ok" hidden>
+      <b>Solicitud recibida</b>
+      <span>Te llamamos en menos de 24 h. Si te corre prisa, escríbenos por WhatsApp.</span>
+    </div>
+  </div>
+</div>
+
 <footer class="footer">
   <a class="footer-ml" href="https://movilease.es" target="_blank" rel="noopener"><span>Una marca de</span><img src="/fotos/movilease-logo.png" alt="MoviLease" width="220" height="47" loading="lazy"></a>
   <p>© 2025 <a href="https://quierorenting.es/">Quiero Renting</a> · Renting de coches para particulares · Toda España</p>
@@ -389,6 +452,7 @@ h1,h2,h3,.hero-title,.sec-header h2,.nav-logo,.logo,.footer-logo{
 <li><a href="/renting-byd-atto-2/">BYD Atto 2</a></li>
 <li><a href="/renting-lynk-co-01/">Lynk & Co 01</a></li>
 <li><a href="/renting-lynk-co-08/">Lynk & Co 08</a></li>
+<li><a href="/renting-bmw-x1/">BMW X1</a></li>
 <li><a href="/renting-maserati-grecale/">Maserati Grecale</a></li>
 <li><a href="/renting-mercedes-gle-350d/">Mercedes GLE 350d Coupé</a></li>
 <li><a href="/renting-nissan-juke/">Nissan Juke</a></li>
@@ -447,6 +511,73 @@ h1,h2,h3,.hero-title,.sec-header h2,.nav-logo,.logo,.footer-logo{
   });
   document.addEventListener('keydown',function(e){ if(e.key==='Escape') cerrar(); });
   m.addEventListener('click',function(e){ if(e.target.tagName==='A') cerrar(); });
+})();
+</script>
+<script>
+/* Envio del formulario de la ficha. Mismo destino y mismas reglas que el popup
+   de la portada: el servidor vuelve a validar todo, incluido el consentimiento,
+   porque una casilla marcada en el navegador no demuestra nada. */
+(function () {
+  var f = document.getElementById('sol-form');
+  if (!f) return;
+  var msg = document.getElementById('sol-msg');
+  var btn = document.getElementById('sol-btn');
+  var COCHE = "";
+
+  function fallo(m) {
+    msg.textContent = m;
+    btn.disabled = false;
+    btn.textContent = 'Quiero que me llamen';
+  }
+
+  f.addEventListener('submit', function (ev) {
+    ev.preventDefault();
+    msg.textContent = '';
+    var nombre = (document.getElementById('sol-nombre').value || '').trim();
+    var tel = (document.getElementById('sol-tel').value || '').trim();
+    var mail = (document.getElementById('sol-mail').value || '').trim();
+    var chk = document.getElementById('sol-chk');
+
+    if (nombre.length < 2) return fallo('Necesitamos tu nombre.');
+    /* Misma forma que valida el servidor: si no, el navegador deja pasar algo
+       que luego se rechaza y el usuario no entiende por que. */
+    if (!/^[+\d][\d\s.-]{6,20}$/.test(tel)) return fallo('Escribe un tel\u00e9fono v\u00e1lido.');
+    if (mail && mail.indexOf('@') < 1) return fallo('Ese email no parece v\u00e1lido.');
+    if (!chk.checked) {
+      chk.focus();
+      return fallo('Marca la casilla de la pol\u00edtica de privacidad para poder llamarte.');
+    }
+
+    btn.disabled = true;
+    btn.textContent = 'Enviando\u2026';
+    fetch('/api/lead', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        nombre: nombre,
+        telefono: tel,
+        email: mail,
+        rgpd: true,
+        confirmar: (document.getElementById('sol-web') || {}).value || '',
+        pagina: window.location.href,
+        coche: COCHE
+      })
+    })
+      .then(function (r) { return r.json().catch(function () { return { ok: false }; }); })
+      .then(function (d) {
+        /* La confirmacion solo si el servidor dice que salio: si no, el cliente
+           se iria creyendo que le van a llamar. */
+        if (d && d.ok) {
+          f.style.display = 'none';
+          document.getElementById('sol-ok').hidden = false;
+          return;
+        }
+        fallo((d && d.error) || 'No hemos podido enviarlo. Int\u00e9ntalo de nuevo o escr\u00edbenos por WhatsApp.');
+      })
+      .catch(function () {
+        fallo('No hemos podido enviarlo. Int\u00e9ntalo de nuevo o escr\u00edbenos por WhatsApp.');
+      });
+  });
 })();
 </script>
 </body>

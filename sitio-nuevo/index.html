@@ -459,8 +459,8 @@ nav{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.93);backdrop-
 .catalog-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:16px}
 .catalog-card{background:#fff;border:1px solid var(--border);border-radius:14px;overflow:hidden;transition:box-shadow .25s,transform .25s;display:flex;flex-direction:column;box-shadow:0 1px 2px rgba(0,0,0,.04)}
 .catalog-card:hover{box-shadow:0 8px 32px rgba(0,0,0,.09);transform:translateY(-3px)}
-.cc-img{position:relative;aspect-ratio:16/9;overflow:hidden;background:var(--soft)}
-.cc-img img{width:100%;height:100%;object-fit:cover;transition:transform .4s cubic-bezier(.16,1,.3,1)}
+.cc-img{position:relative;aspect-ratio:4/3;overflow:hidden;background:var(--soft)}
+.cc-img img{width:100%;height:100%;object-fit:contain;padding:8px;box-sizing:border-box;transition:transform .4s cubic-bezier(.16,1,.3,1)}
 .catalog-card:hover .cc-img img{transform:scale(1.05)}
 .cc-img-placeholder{width:100%;height:100%;display:flex;align-items:center;justify-content:center;font-size:26px;font-weight:700;color:#d1d5db;font-family:'Space Grotesk',sans-serif}
 .cc-badge{position:absolute;top:8px;left:8px;font-size:9px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:3px 8px;border-radius:99px;color:#fff}
@@ -495,11 +495,20 @@ nav{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.93);backdrop-
 .ofertas-inner{max-width:1100px;margin:0 auto;position:relative}
 .ofertas-tag{display:inline-flex;align-items:center;gap:6px;background:rgba(90,160,255,.1);color:#5aa0ff;font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:5px 14px;border-radius:99px;border:1px solid rgba(90,160,255,.22);margin-bottom:12px}
 .ofertas-tag svg{width:12px;height:12px;flex-shrink:0;fill:#5aa0ff}
+.exclusivos-section{background:linear-gradient(160deg,#02060f 0%,#0b2a5e 58%,#040b18 100%)}
+.exclusivos-section .oferta-img{aspect-ratio:4/3;background:#0b2a5e}
+/* contain y sin zoom: estas fotos vienen recortadas al coche y la tarjeta de
+   ofertas es 16/9 con cover, asi que al llenar la caja se le comian el morro y
+   la cola. Aqui interesa el coche entero aunque sobre aire arriba y abajo. */
+.exclusivos-section .oferta-img img{object-fit:contain;transform:none;padding:10px;box-sizing:border-box}
+.exclusivos-section .oferta-sticker{background:rgba(255,255,255,.14);box-shadow:none;border:1px solid rgba(255,255,255,.28)}
 .ofertas-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:16px}
 .oferta-card{background:rgba(255,255,255,.03);border:1px solid rgba(90,160,255,.15);border-radius:16px;overflow:hidden;position:relative;cursor:pointer;transition:transform .25s,box-shadow .25s}
 .oferta-card:hover{transform:translateY(-4px);box-shadow:0 16px 48px rgba(0,0,0,.4),0 0 0 1px rgba(90,160,255,.3)}
-.oferta-img{aspect-ratio:16/9;overflow:hidden;background:#0a1620;position:relative}
-.oferta-img img{width:100%;height:100%;object-fit:cover;transition:transform .4s cubic-bezier(.16,1,.3,1)}
+.oferta-img{aspect-ratio:4/3;overflow:hidden;background:#0a1620;position:relative}
+/* 4:3 y contain, no 16/9 con cover: las fotos del Drive son 4:3 y al llenar
+   una caja 16/9 se le comian al coche el techo y las ruedas. */
+.oferta-img img{width:100%;height:100%;object-fit:contain;padding:8px;box-sizing:border-box;transition:transform .4s cubic-bezier(.16,1,.3,1)}
 .oferta-card:hover .oferta-img img{transform:scale(1.05)}
 .oferta-sticker{position:absolute;top:10px;left:10px;background:linear-gradient(135deg,#0068ff,#0052cc);color:#fff;font-size:9px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:4px 10px;border-radius:99px;box-shadow:0 2px 8px rgba(0,104,255,.4)}
 .oferta-limited{position:absolute;bottom:10px;left:10px;display:flex;align-items:center;gap:5px;background:rgba(0,0,0,.75);backdrop-filter:blur(4px);color:rgba(255,255,255,.8);font-size:9px;font-weight:600;padding:4px 10px;border-radius:99px}
@@ -1133,6 +1142,20 @@ h1,h2,h3,.hero-title,.sec-header h2,.nav-logo,.logo,.footer-logo{
   </div>
 </section>
 
+<section class="ofertas-section exclusivos-section" id="exclusivos">
+  <div class="ofertas-inner">
+    <div class="sec-header" style="text-align:left;max-width:620px;margin-bottom:40px">
+      <div class="ofertas-tag">
+        <svg viewBox="0 0 24 24"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.3 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8L12 2z"/></svg>
+        Alta gama
+      </div>
+      <h2 style="color:#f0f4ff;margin-top:8px">Coches Exclusivos</h2>
+      <p style="color:rgba(255,255,255,.38)">Las mismas condiciones que el resto del catálogo · IVA incluido · 10.000 km/año · Sin entrada</p>
+    </div>
+    <div class="ofertas-grid" id="exclusivos-grid"></div>
+  </div>
+</section>
+
 <div class="trust-bar">
   <div class="trust-inner">
     <span class="trust-item"><span class="trust-dot"></span>Sin entrada</span>
@@ -1159,7 +1182,7 @@ h1,h2,h3,.hero-title,.sec-header h2,.nav-logo,.logo,.footer-logo{
   <div class="sec-header">
     <span class="sec-tag">⭐ Los más solicitados</span>
     <h2>Coches en renting más vendidos</h2>
-    <p>Los favoritos de nuestros clientes · IVA incluido · 36 meses · 15.000 km/año · Sin entrada</p>
+    <p>Los favoritos de nuestros clientes · IVA incluido · 10.000 km/año · Sin entrada</p>
   </div>
   <div class="featured-grid" id="featured-grid"></div>
 </div>
@@ -1291,6 +1314,7 @@ h1,h2,h3,.hero-title,.sec-header h2,.nav-logo,.logo,.footer-logo{
 <li><a href="/renting-byd-atto-2/">BYD Atto 2</a></li>
 <li><a href="/renting-lynk-co-01/">Lynk & Co 01</a></li>
 <li><a href="/renting-lynk-co-08/">Lynk & Co 08</a></li>
+<li><a href="/renting-bmw-x1/">BMW X1</a></li>
 <li><a href="/renting-maserati-grecale/">Maserati Grecale</a></li>
 <li><a href="/renting-mercedes-gle-350d/">Mercedes GLE 350d Coupé</a></li>
 <li><a href="/renting-nissan-juke/">Nissan Juke</a></li>
@@ -1352,47 +1376,47 @@ const WA = 'https://wa.me/34644156797?text=Hola%2C%20me%20interesa%20el%20';
 const IMG = 'https://fotos.quecochemecompro.com/';
 
 const CARS = [
-  {b:'Jaecoo',m:'7',s:'PHEV 1.5 TGDI 347CV Business',t:'SUV',fuel:'Híbrido',g:'Automático',p:535,cv:347,cons:'—',plazas:5,img:'fotos/jaecoo-7-01.webp',cat:'hibrido',feat:false,badge:'Híbrido'},{b:'Omoda',m:'5',s:'HEV 1.5 TGDI 224CV Business',t:'SUV',fuel:'Híbrido',g:'Automático',p:425,cv:224,cons:'7',plazas:5,img:'fotos/omoda-5-01.webp',cat:'hibrido',feat:false,badge:'Híbrido'},{b:'Omoda',m:'7',s:'1.5 TGDI 147CV Mate Premium',t:'SUV',fuel:'Gasolina',g:'Automático',p:702,cv:147,cons:'—',plazas:5,img:'fotos/omoda-7-01.webp',cat:'suv',feat:false,badge:'SUV'},{b:'Toyota',m:'Hilux',s:'MY25 Doble Cabina GX 2.4B 150CV 6AT 4x4',t:'Pick-up',fuel:'Gasolina',g:'Automático',p:550,cv:150,cons:'—',plazas:5,img:'fotos/toyota-hilux-01.webp',cat:'turismo',feat:false,badge:null},{b:'Volkswagen',m:'T-Roc',s:'"MÁS" 1.5 eTSI 85kW 116CV DSG',t:'SUV',fuel:'Gasolina',g:'Automático',p:434,cv:116,cons:'—',plazas:5,img:'fotos/vw-t-roc-01.webp',cat:'suv',feat:false,badge:'SUV'},
-  {b:'Peugeot',m:'208',s:'Allure Gasolina 100 S&S 6 Vel. MAN',t:'Compacto',fuel:'Gasolina',g:'Manual',p:283,cv:100,cons:'—',plazas:5,img:'fotos/peugeot-208-01.webp',cat:'turismo',feat:false,badge:null},
-  {b:'SEAT',m:'Ibiza',s:'1.0 TSI 85kW 115CV S&S Style+',t:'Compacto',fuel:'Gasolina',g:'Manual',p:300,cv:115,cons:'—',plazas:5,img:'fotos/seat-ibiza-115-01.webp',cat:'turismo',feat:false,badge:null},
-  {b:'Opel',m:'Corsa',s:'1.2T XHL 74kW 100CV GS',t:'Compacto',fuel:'Gasolina',g:'Manual',p:277,cv:100,cons:'—',plazas:5,img:'fotos/opel-corsa-blanco-01.webp',cat:'turismo',feat:true,badge:null},
-  {b:'Toyota',m:'Yaris',s:'120H 116CV ACTIVE',t:'Compacto',fuel:'Híbrido',g:'Automático',p:327,cv:116,cons:'—',plazas:5,img:'fotos/toyota-yaris-01.webp',cat:'hibrido',feat:true,badge:'Híbrido'},
-  {b:'Volkswagen',m:'Polo',s:'MATCH 1.0 TSI 95CV',t:'Compacto',fuel:'Gasolina',g:'Manual',p:329,cv:95,cons:'—',plazas:5,img:'fotos/vw-polo-01.webp',cat:'turismo',feat:true,badge:null},
-  {b:'SEAT',m:'León',s:'1.5 eTSI 115CV DSG Style XL',t:'Compacto',fuel:'Gasolina',g:'Automático',p:330,cv:115,cons:'—',plazas:5,img:'https://fotos.quecochemecompro.com/seat-leon/seat-leon-lateral-vista.jpeg?size=1200x800',cat:'turismo',feat:false,badge:null},
-  {b:'Mazda',m:'2',s:'1.5 85kW 116CV CVT Centre-line',t:'Compacto',fuel:'Gasolina',g:'Automático',p:343,cv:116,cons:'4,7',plazas:5,img:'fotos/mazda-2-01.webp',cat:'turismo',feat:false,badge:null},{b:'Mazda',m:'3',s:'2.5L e-SKY G MHEV 103kW 140CV Prime-line',t:'Compacto',fuel:'Híbrido',g:'Manual',p:322,cv:140,cons:'5,5',plazas:5,img:'https://fotos.quecochemecompro.com/mazda-3/mazda-3-vista-delantera-lateral.jpg?size=1200x800',cat:'hibrido',feat:false,badge:'Híbrido'},{b:'Mazda',m:'CX-30',s:'e-SKYACTIV G MHEV 140CV MT',t:'SUV',fuel:'Híbrido',g:'Manual',p:357,cv:140,cons:'—',plazas:5,img:'https://fotos.quecochemecompro.com/mazda-cx-30/43528145.jpg?size=1200x800',cat:'hibrido',feat:true,badge:'Híbrido'},
-  {b:'Škoda',m:'Fabia',s:'1.5 TSI 150CV DSG Plus',t:'Compacto',fuel:'Gasolina',g:'Automático',p:346,cv:150,cons:'—',plazas:5,img:'fotos/skoda-fabia-01.webp',cat:'turismo',feat:false,badge:null},
-  {b:'Volkswagen',m:'Taigo',s:'1.0 TSI 70kW 95CV',t:'SUV',fuel:'Gasolina',g:'Manual',p:356,cv:95,cons:'—',plazas:5,img:'fotos/vw-taigo-01.webp',cat:'suv',feat:true,badge:'SUV'},
-  {b:'SEAT',m:'León',s:'1.5 TSI 150CV FR Special Edition',t:'Compacto',fuel:'Gasolina',g:'Manual',p:357,cv:150,cons:'—',plazas:5,img:'fotos/seat-leon-fr-01.webp',cat:'turismo',feat:false,badge:null},
-  {b:'Cupra',m:'Formentor',s:'1.5 eTSI 150CV DSG',t:'SUV',fuel:'Gasolina',g:'Automático',p:428,cv:150,cons:'—',plazas:5,img:'https://fotos.quecochemecompro.com/cupra-formentor/cupra-formentor-en-movimiento.jpeg?size=1200x800',cat:'turismo',feat:true,badge:'SUV',oferta:true},
-  {b:'Kia',m:'Niro',s:'1.6 GDi HEV 139CV Drive',t:'SUV',fuel:'Híbrido',g:'Automático',p:381,cv:139,cons:'—',plazas:5,img:'fotos/kia-niro-01.webp',cat:'suv',feat:false,badge:'Híbrido'},
-  {b:'Nissan',m:'Qashqai',s:'DIG-T 103kW 140CV mHEV 4x2 Acenta',t:'SUV',fuel:'Gasolina',g:'Manual',p:381,cv:140,cons:'—',plazas:5,img:'fotos/nissan-qashqai-01.webp',cat:'suv',feat:false,badge:'SUV'},
-  {b:'Audi',m:'A1',s:'SB Adrenalin Edition 30TFSI 116CV Stronic',t:'Compacto',fuel:'Gasolina',g:'Automático',p:381,cv:116,cons:'—',plazas:5,img:'fotos/audi-a1-01.webp',cat:'turismo',feat:false,badge:null},
-  {b:'Nissan',m:'Juke',s:'1.6 Hybrid 145CV N-Connecta',t:'SUV',fuel:'Híbrido',g:'Automático',p:386,cv:143,cons:'—',plazas:5,img:'fotos/nissan-juke-01.webp',cat:'hibrido',feat:false,badge:'Híbrido'},
-  {b:'Opel',m:'Mokka',s:'1.2 T XHT Hybrid eDCT6 GS',t:'SUV',fuel:'Híbrido',g:'Automático',p:393,cv:145,cons:'—',plazas:5,img:'fotos/opel-mokka-01.webp',cat:'suv',feat:false,badge:'SUV'},
-  {b:'MG',m:'HS',s:'HEV COM MY25.5',t:'SUV',fuel:'Híbrido',g:'Automático',p:405,cv:null,cons:'—',plazas:5,img:'https://fotos.quecochemecompro.com/mg-hs/37557811.jpeg?size=1200x800',cat:'suv',feat:false,badge:'Híbrido'},
-  {b:'Toyota',m:'Yaris Cross',s:'130H e-CVT 5P ACTIVE',t:'SUV',fuel:'Híbrido',g:'Automático',p:413,cv:130,cons:'—',plazas:5,img:'fotos/toyota-yaris-cross-01.webp',cat:'hibrido',feat:true,badge:'Híbrido'},
-  {b:'Ebro',m:'S400',s:'1.5 DHE HEV Excellence CVT',t:'SUV',fuel:'Híbrido',g:'Automático',p:442,cv:150,cons:'—',plazas:5,img:'fotos/ebro-s400-01.webp',cat:'hibrido',feat:true,badge:'Híbrido',oferta:true},
-  {b:'Hyundai',m:'Tucson',s:'1.6 HEV AT Klass 239CV',t:'SUV',fuel:'Híbrido',g:'Automático',p:444,cv:239,cons:'—',plazas:5,img:'fotos/hyundai-tucson-01.webp',cat:'hibrido',feat:true,badge:'Híbrido'},
-  {b:'Jaecoo',m:'5',s:'HEV 1.5 TGDI 224CV Exclusive',t:'SUV',fuel:'Híbrido',g:'Automático',p:474,cv:224,cons:'—',plazas:5,img:'fotos/jaecoo-5-01.webp',cat:'hibrido',feat:true,badge:'Híbrido'},
-  {b:'Mercedes-Benz',m:'Citan',s:'110 CDI 70kW Furgón Base Cargo',t:'Furgoneta',fuel:'Diesel',g:'Manual',p:450,cv:95,cons:'—',plazas:2,img:'fotos/mercedes-citan-01.webp',cat:'furgoneta',feat:false,badge:null},
-  {b:'Toyota',m:'C-HR',s:'1.8 ADVANCE HYBRID 140 e-CVT',t:'SUV',fuel:'Híbrido',g:'Automático',p:471,cv:140,cons:'—',plazas:5,img:'fotos/toyota-chr-01.webp',cat:'hibrido',feat:true,badge:'Híbrido'},
+  {b:'Jaecoo',m:'7',s:'PHEV 1.5 TGDI 347CV Business',t:'SUV',fuel:'Híbrido',g:'Automático',p:535,cv:347,cons:'—',plazas:5,img:'fotos/jaecoo-7-01.webp',cat:'hibrido',feat:false,badge:'Híbrido',meses:60},{b:'Omoda',m:'5',s:'HEV 1.5 TGDI 224CV Business',t:'SUV',fuel:'Híbrido',g:'Automático',p:425,cv:224,cons:'7',plazas:5,img:'fotos/omoda-5-01.webp',cat:'hibrido',feat:false,badge:'Híbrido',meses:60},{b:'Omoda',m:'7',s:'1.5 TGDI 147CV Mate Premium',t:'SUV',fuel:'Gasolina',g:'Automático',p:702,cv:147,cons:'—',plazas:5,img:'fotos/omoda-7-01.webp',cat:'suv',feat:false,badge:'SUV',meses:60},{b:'Toyota',m:'Hilux',s:'MY25 Doble Cabina GX 2.4B 150CV 6AT 4x4',t:'Pick-up',fuel:'Gasolina',g:'Automático',p:550,cv:150,cons:'—',plazas:5,img:'fotos/toyota-hilux-01.webp',cat:'turismo',feat:false,badge:null,meses:48},{b:'Volkswagen',m:'T-Roc',s:'"MÁS" 1.5 eTSI 85kW 116CV DSG',t:'SUV',fuel:'Gasolina',g:'Automático',p:434,cv:116,cons:'—',plazas:5,img:'fotos/vw-t-roc-01.webp',cat:'suv',feat:false,badge:'SUV',meses:60},
+  {b:'Peugeot',m:'208',s:'Allure Gasolina 100 S&S 6 Vel. MAN',t:'Compacto',fuel:'Gasolina',g:'Manual',p:283,cv:100,cons:'—',plazas:5,img:'fotos/peugeot-208-01.webp',cat:'turismo',feat:false,badge:null,meses:60},
+  {b:'SEAT',m:'Ibiza',s:'1.0 TSI Style+ 95 CV',t:'Compacto',fuel:'Gasolina',g:'Manual',p:275,cv:95,cons:'—',plazas:5,img:'fotos/seat-ibiza-95-01.webp',cat:'turismo',feat:false,badge:null,oferta:true,meses:36},
+  {b:'Opel',m:'Corsa',s:'1.2T XHL 74kW 100CV GS',t:'Compacto',fuel:'Gasolina',g:'Manual',p:277,cv:100,cons:'—',plazas:5,img:'fotos/opel-corsa-blanco-01.webp',cat:'turismo',feat:true,badge:null,meses:60},
+  {b:'Toyota',m:'Yaris',s:'120H 116CV ACTIVE',t:'Compacto',fuel:'Híbrido',g:'Automático',p:327,cv:116,cons:'—',plazas:5,img:'fotos/toyota-yaris-01.webp',cat:'hibrido',feat:true,badge:'Híbrido',meses:72},
+  {b:'Volkswagen',m:'Polo',s:'MATCH 1.0 TSI 95CV',t:'Compacto',fuel:'Gasolina',g:'Manual',p:329,cv:95,cons:'—',plazas:5,img:'fotos/vw-polo-01.webp',cat:'turismo',feat:true,badge:null,meses:60},
+  {b:'SEAT',m:'León',s:'1.5 eTSI 115CV DSG Style XL',t:'Compacto',fuel:'Gasolina',g:'Automático',p:330,cv:115,cons:'—',plazas:5,img:'fotos/seat-leon-fr-01.webp',cat:'turismo',feat:false,badge:null,meses:48},
+  {b:'Mazda',m:'2',s:'1.5 85kW 116CV CVT Centre-line',t:'Compacto',fuel:'Gasolina',g:'Automático',p:343,cv:116,cons:'4,7',plazas:5,img:'fotos/mazda-2-01.webp',cat:'turismo',feat:false,badge:null,meses:60},{b:'Mazda',m:'3',s:'2.5L e-SKY G MHEV 103kW 140CV Prime-line',t:'Compacto',fuel:'Híbrido',g:'Manual',p:322,cv:140,cons:'5,5',plazas:5,img:'fotos/mazda-3-01.webp',cat:'hibrido',feat:true,badge:'Híbrido',meses:60},{b:'Mazda',m:'CX-30',s:'e-SKYACTIV G MHEV 140CV MT',t:'SUV',fuel:'Híbrido',g:'Manual',p:357,cv:140,cons:'—',plazas:5,img:'fotos/mazda-cx-30-01.webp',cat:'hibrido',feat:true,badge:'Híbrido',meses:36},
+  {b:'Škoda',m:'Fabia',s:'1.5 TSI 150CV DSG Plus',t:'Compacto',fuel:'Gasolina',g:'Automático',p:346,cv:150,cons:'—',plazas:5,img:'fotos/skoda-fabia-01.webp',cat:'turismo',feat:false,badge:null,meses:60},
+  {b:'Volkswagen',m:'Taigo',s:'1.0 TSI 70kW 95CV',t:'SUV',fuel:'Gasolina',g:'Manual',p:356,cv:95,cons:'—',plazas:5,img:'fotos/vw-taigo-01.webp',cat:'suv',feat:true,badge:'SUV',meses:60},
+  {b:'SEAT',m:'León',s:'1.5 TSI 150CV FR Special Edition',t:'Compacto',fuel:'Gasolina',g:'Manual',p:357,cv:150,cons:'—',plazas:5,img:'fotos/seat-leon-fr-01.webp',cat:'turismo',feat:false,badge:null,meses:60},
+  {b:'Cupra',m:'Formentor',s:'1.5 eTSI 150CV DSG',t:'SUV',fuel:'Gasolina',g:'Automático',p:428,cv:150,cons:'—',plazas:5,img:'fotos/cupra-formentor-01.webp',cat:'turismo',feat:true,badge:'SUV',oferta:true,meses:36},
+  {b:'Kia',m:'Niro',s:'1.6 GDi HEV 139CV Drive',t:'SUV',fuel:'Híbrido',g:'Automático',p:381,cv:139,cons:'—',plazas:5,img:'fotos/kia-niro-01.webp',cat:'suv',feat:false,badge:'Híbrido',meses:60},
+  {b:'Nissan',m:'Qashqai',s:'DIG-T 103kW 140CV mHEV 4x2 Acenta',t:'SUV',fuel:'Gasolina',g:'Manual',p:381,cv:140,cons:'—',plazas:5,img:'fotos/nissan-qashqai-01.webp',cat:'suv',feat:false,badge:'SUV',meses:60},
+  {b:'Audi',m:'A1',s:'SB Adrenalin Edition 30TFSI 116CV Stronic',t:'Compacto',fuel:'Gasolina',g:'Automático',p:381,cv:116,cons:'—',plazas:5,img:'fotos/audi-a1-01.webp',cat:'turismo',feat:false,badge:null,meses:36},
+  {b:'Nissan',m:'Juke',s:'1.6 Hybrid 145CV N-Connecta',t:'SUV',fuel:'Híbrido',g:'Automático',p:386,cv:143,cons:'—',plazas:5,img:'fotos/nissan-juke-01.webp',cat:'hibrido',feat:false,badge:'Híbrido',meses:60},
+  {b:'Opel',m:'Mokka',s:'1.2 T XHT Hybrid eDCT6 GS',t:'SUV',fuel:'Híbrido',g:'Automático',p:393,cv:145,cons:'—',plazas:5,img:'fotos/opel-mokka-01.webp',cat:'suv',feat:false,badge:'SUV',meses:60},
+  {b:'MG',m:'HS',s:'HEV COM MY25.5',t:'SUV',fuel:'Híbrido',g:'Automático',p:405,cv:null,cons:'—',plazas:5,img:'fotos/mg-hs-01.webp',cat:'suv',feat:false,badge:'Híbrido',meses:60},
+  {b:'Toyota',m:'Yaris Cross',s:'130H e-CVT 5P ACTIVE',t:'SUV',fuel:'Híbrido',g:'Automático',p:413,cv:130,cons:'—',plazas:5,img:'fotos/toyota-yaris-cross-01.webp',cat:'hibrido',feat:true,badge:'Híbrido',meses:60},
+  {b:'Ebro',m:'S400',s:'1.5 DHE HEV Excellence CVT',t:'SUV',fuel:'Híbrido',g:'Automático',p:442,cv:150,cons:'—',plazas:5,img:'fotos/ebro-s400-01.webp',cat:'hibrido',feat:true,badge:'Híbrido',oferta:false,meses:60},
+  {b:'Hyundai',m:'Tucson',s:'1.6 HEV AT Klass 239CV',t:'SUV',fuel:'Híbrido',g:'Automático',p:444,cv:239,cons:'—',plazas:5,img:'fotos/hyundai-tucson-01.webp',cat:'hibrido',feat:true,badge:'Híbrido',meses:60},
+  {b:'Jaecoo',m:'5',s:'HEV 1.5 TGDI 224CV Exclusive',t:'SUV',fuel:'Híbrido',g:'Automático',p:474,cv:224,cons:'—',plazas:5,img:'fotos/jaecoo-5-01.webp',cat:'hibrido',feat:true,badge:'Híbrido',meses:60},
+  {b:'Mercedes-Benz',m:'Citan',s:'110 CDI 70kW Furgón Base Cargo',t:'Furgoneta',fuel:'Diesel',g:'Manual',p:450,cv:95,cons:'—',plazas:2,img:'fotos/mercedes-citan-01.webp',cat:'furgoneta',feat:false,badge:null,meses:60},
+  {b:'Toyota',m:'C-HR',s:'1.8 ADVANCE HYBRID 140 e-CVT',t:'SUV',fuel:'Híbrido',g:'Automático',p:471,cv:140,cons:'—',plazas:5,img:'fotos/toyota-chr-01.webp',cat:'hibrido',feat:true,badge:'Híbrido',meses:60},
   
-  {b:'Volkswagen',m:'Tiguan',s:'MÁS 1.5 eTSI 150CV DSG',t:'SUV',fuel:'Híbrido',g:'Automático',p:497,cv:150,cons:'—',plazas:5,img:'fotos/vw-tiguan-01.webp',cat:'hibrido',feat:true,badge:'Híbrido'},
+  {b:'Volkswagen',m:'Tiguan',s:'MÁS 1.5 eTSI 150CV DSG',t:'SUV',fuel:'Híbrido',g:'Automático',p:497,cv:150,cons:'—',plazas:5,img:'fotos/vw-tiguan-01.webp',cat:'hibrido',feat:true,badge:'Híbrido',meses:60},
   
-  {b:'Mazda',m:'CX-60',s:'3.3 e-SKYACTIV D MHEV 200CV 8AT RWD Prime-Line',t:'SUV',fuel:'Diesel',g:'Automático',p:538,cv:200,cons:'—',plazas:5,img:'https://fotos.quecochemecompro.com/mazda-cx-60/mazda-cx60-vista-lateral.jpg?size=1200x800',cat:'suv',feat:false,badge:'SUV'},
-  {b:'Honda',m:'CR-V',s:'2.0 i-MMD PHEV 4X2 Elegance Tech',t:'SUV',fuel:'PHEV',g:'Automático',p:540,cv:184,cons:'—',plazas:5,img:'fotos/honda-crv-01.webp',cat:'suv',feat:true,badge:'SUV',oferta:true},
-  {b:'Nissan',m:'Interstar',s:'Furgón N1 L2 H2 dCi 130CV 6 M/T FWD Acenta',t:'Furgoneta',fuel:'Diesel',g:'Manual',p:555,cv:130,cons:'—',plazas:5,img:'fotos/nissan-interstar-01.webp',cat:'furgoneta',feat:false,badge:null},
-  {b:'Peugeot',m:'Boxer',s:'3.3 L2 H2 BHDi 140CV',t:'Furgoneta',fuel:'Diesel',g:'Manual',p:578,cv:140,cons:'—',plazas:3,img:'fotos/peugeot-boxer-01.webp',cat:'furgoneta',feat:false,badge:null},
-  {b:'Mercedes-Benz',m:'GLA',s:'200d AMG Line Advanced Plus',t:'SUV',fuel:'Diesel',g:'Automático',p:554,cv:150,cons:'—',plazas:5,img:'fotos/mercedes-gla-01.webp',cat:'suv',feat:false,badge:'SUV',oferta:false},
-  {b:'Mercedes-Benz',m:'GLC Coupé',s:'200 4MATIC',t:'SUV',fuel:'Gasolina',g:'Automático',p:1048,cv:204,cons:'—',plazas:5,img:'fotos/mercedes-glc-coupe-01.webp',cat:'suv',feat:true,badge:'SUV',oferta:true},
-  {b:'Mercedes-Benz',m:'GLE Coupé',s:'300d 4MATIC',t:'SUV',fuel:'Diesel',g:'Automático',p:1407,cv:269,cons:'—',plazas:5,img:'fotos/mercedes-gle-coupe-01.webp',cat:'hibrido',feat:true,badge:'SUV'},
-  {b:'Citroën',m:'Berlingo',s:'Van Furgón M 1.5 BlueHDi 100 CV',t:'Furgoneta',fuel:'Diesel',g:'Manual',p:405,cv:100,cons:'—',plazas:2,img:'fotos/citroen-berlingo-01.webp',cat:'furgoneta',feat:false,badge:'',oferta:false},
-  {b:'Alfa Romeo',m:'Junior',s:'Ibrida TI 1.2 VGT 145 CV',t:'SUV',fuel:'Híbrido',g:'Automático',p:442,cv:145,cons:'—',plazas:5,img:'fotos/alfa-romeo-junior-01.webp',cat:'hibrido',feat:false,badge:'Híbrido',oferta:false},
-  {b:'BYD',m:'Atto 2',s:'1.5 DM-i 212 CV',t:'SUV',fuel:'PHEV',g:'Automático',p:490,cv:212,cons:'—',plazas:5,img:'fotos/byd-atto-2-01.webp',cat:'hibrido',feat:false,badge:'Híbrido',oferta:false},
-  {b:'Lynk & Co',m:'01',s:'Core 1.5 PHEV 261 CV',t:'SUV',fuel:'PHEV',g:'Automático',p:567,cv:261,cons:'—',plazas:5,img:'fotos/lynk-co-01-01.webp',cat:'hibrido',feat:false,badge:'Híbrido',oferta:false},
-  {b:'Lynk & Co',m:'08',s:'Core 1.5 PHEV 350 CV',t:'SUV',fuel:'PHEV',g:'Automático',p:701,cv:350,cons:'—',plazas:5,img:'fotos/lynk-co-08-01.webp',cat:'hibrido',feat:false,badge:'Híbrido',oferta:false},
-  {b:'Maserati',m:'Grecale',s:'L4 MHEV 300 CV AWD',t:'SUV',fuel:'Híbrido',g:'Automático',p:1366,cv:300,cons:'—',plazas:5,img:'fotos/maserati-grecale-01.webp',cat:'suv',feat:false,badge:'SUV',oferta:false},
-  {b:'Mercedes-Benz',m:'GLE 350d Coupé',s:'4MATIC 333 CV',t:'SUV',fuel:'PHEV',g:'Automático',p:1513,cv:333,cons:'—',plazas:5,img:'fotos/mercedes-gle-350d-01.webp',cat:'suv',feat:false,badge:'SUV',oferta:false},
+  {b:'Mazda',m:'CX-60',s:'3.3 e-SKYACTIV D MHEV 200CV 8AT RWD Prime-Line',t:'SUV',fuel:'Diesel',g:'Automático',p:538,cv:200,cons:'—',plazas:5,img:'fotos/mazda-cx-60-01.webp',cat:'suv',feat:false,badge:'SUV',meses:36},
+  {b:'Honda',m:'CR-V',s:'2.0 i-MMD PHEV 4X2 Elegance Tech',t:'SUV',fuel:'PHEV',g:'Automático',p:540,cv:184,cons:'—',plazas:5,img:'fotos/honda-crv-01.webp',cat:'suv',feat:true,badge:'SUV',oferta:true,meses:36},
+  {b:'Nissan',m:'Interstar',s:'Furgón N1 L2 H2 dCi 130CV 6 M/T FWD Acenta',t:'Furgoneta',fuel:'Diesel',g:'Manual',p:555,cv:130,cons:'—',plazas:5,img:'fotos/nissan-interstar-01.webp',cat:'furgoneta',feat:false,badge:null,meses:60},
+  {b:'Peugeot',m:'Boxer',s:'3.3 L2 H2 BHDi 140CV',t:'Furgoneta',fuel:'Diesel',g:'Manual',p:578,cv:140,cons:'—',plazas:3,img:'fotos/peugeot-boxer-01.webp',cat:'furgoneta',feat:false,badge:null,meses:60},
+  {b:'Mercedes-Benz',m:'GLA',s:'200d AMG Line Advanced Plus',t:'SUV',fuel:'Diesel',g:'Automático',p:554,cv:150,cons:'—',plazas:5,img:'fotos/mercedes-gla-01.webp',cat:'suv',feat:false,badge:'SUV',oferta:false,meses:60},
+  {b:'Mercedes-Benz',m:'GLC Coupé',s:'220 d 4MATIC AMG Advanced Plus',t:'SUV',fuel:'Diésel',g:'Automático',p:1006,cv:0,cons:'—',plazas:5,img:'fotos/mercedes-glc-coupe-01.webp',cat:'suv',feat:true,badge:'SUV',oferta:false,excl:true,meses:60},
+  {b:'Mercedes-Benz',m:'GLE Coupé',s:'300d 4MATIC',t:'SUV',fuel:'Diesel',g:'Automático',p:1407,cv:269,cons:'—',plazas:5,img:'fotos/mercedes-gle-coupe-01.webp',cat:'hibrido',feat:true,badge:'SUV',meses:60},
+  {b:'Citroën',m:'Berlingo',s:'Van Furgón M 1.5 BlueHDi 100 CV',t:'Furgoneta',fuel:'Diesel',g:'Manual',p:405,cv:100,cons:'—',plazas:2,img:'fotos/citroen-berlingo-01.webp',cat:'furgoneta',feat:false,badge:'',oferta:false,meses:60},
+  {b:'Alfa Romeo',m:'Junior',s:'Ibrida TI 1.2 VGT 145 CV',t:'SUV',fuel:'Híbrido',g:'Automático',p:442,cv:145,cons:'—',plazas:5,img:'fotos/alfa-romeo-junior-01.webp',cat:'hibrido',feat:false,badge:'Híbrido',oferta:false,meses:60},
+  {b:'BYD',m:'Atto 2',s:'1.5 DM-i 212 CV',t:'SUV',fuel:'PHEV',g:'Automático',p:490,cv:212,cons:'—',plazas:5,img:'fotos/byd-atto-2-01.webp',cat:'hibrido',feat:false,badge:'Híbrido',oferta:false,meses:60},
+  {b:'Lynk & Co',m:'01',s:'Core 1.5 PHEV 261 CV',t:'SUV',fuel:'PHEV',g:'Automático',p:567,cv:261,cons:'—',plazas:5,img:'fotos/lynk-co-01-01.webp',cat:'hibrido',feat:false,badge:'Híbrido',oferta:false,meses:60},
+  {b:'Lynk & Co',m:'08',s:'Core 1.5 PHEV 350 CV',t:'SUV',fuel:'PHEV',g:'Automático',p:701,cv:350,cons:'—',plazas:5,img:'fotos/lynk-co-08-01.webp',cat:'hibrido',feat:false,badge:'Híbrido',oferta:false,meses:60},
+  {b:'BMW',m:'X1',s:'sDrive20d 163 CV MHEV',t:'SUV',fuel:'Híbrido',g:'Automático',p:562,cv:163,cons:'—',plazas:5,img:'fotos/bmw-x1-01.webp',cat:'suv',feat:false,badge:'SUV',oferta:false,excl:true,meses:60},{b:'Maserati',m:'Grecale',s:'L4 MHEV 300 CV AWD',t:'SUV',fuel:'Híbrido',g:'Automático',p:1366,cv:300,cons:'—',plazas:5,img:'fotos/maserati-grecale-01.webp',cat:'suv',feat:false,badge:'SUV',oferta:false,excl:true,meses:60},
+  {b:'Mercedes-Benz',m:'GLE 350d Coupé',s:'4MATIC 333 CV',t:'SUV',fuel:'PHEV',g:'Automático',p:1513,cv:333,cons:'—',plazas:5,img:'fotos/mercedes-gle-350d-01.webp',cat:'suv',feat:false,badge:'SUV',oferta:false,meses:60},
 ];
 
 // Punto de millar en los importes. Sin esto el GLC salia "€1048" y el GLE
@@ -1432,9 +1456,9 @@ function carSlug(b, m) {
   return 'renting-'+sl(b)+'-'+sl(m);
 }
 
-const PAGINAS = new Set(['renting-ebro-s400','renting-hyundai-tucson','renting-mazda-cx-30','renting-mercedes-citan','renting-mercedes-glc','renting-mercedes-gle','renting-nissan-interstar','renting-nissan-juke','renting-nissan-qashqai','renting-opel-corsa','renting-opel-mokka','renting-peugeot-208','renting-peugeot-boxer','renting-seat-ibiza','renting-toyota-yaris','renting-toyota-yaris-cross','renting-volkswagen-polo','renting-volkswagen-taigo','renting-volkswagen-tiguan']);
+const PAGINAS = new Set(['renting-alfa-romeo-junior','renting-bmw-x1','renting-byd-atto-2','renting-citroen-berlingo','renting-ebro-s400','renting-hyundai-tucson','renting-lynk-co-01','renting-lynk-co-08','renting-maserati-grecale','renting-mazda-cx-30','renting-mercedes-citan','renting-mercedes-gla','renting-mercedes-glc','renting-mercedes-gle','renting-mercedes-gle-350d','renting-nissan-interstar','renting-nissan-juke','renting-nissan-qashqai','renting-opel-corsa','renting-opel-mokka','renting-peugeot-208','renting-peugeot-boxer','renting-seat-ibiza','renting-toyota-yaris','renting-toyota-yaris-cross','renting-volkswagen-polo','renting-volkswagen-taigo','renting-volkswagen-tiguan']);
 // Dos fichas se publicaron con el nombre corto de la marca; el catalogo usa el oficial.
-const ALIAS_PAGINA = {'renting-mercedes-benz-glc-coupe': 'renting-mercedes-glc', 'renting-mercedes-benz-gle-coupe': 'renting-mercedes-gle', 'renting-mercedes-benz-citan': 'renting-mercedes-citan'};
+const ALIAS_PAGINA = {'renting-mercedes-benz-citan': 'renting-mercedes-citan', 'renting-mercedes-benz-gla': 'renting-mercedes-gla', 'renting-mercedes-benz-glc-coupe': 'renting-mercedes-glc', 'renting-mercedes-benz-gle-350d-coupe': 'renting-mercedes-gle-350d', 'renting-mercedes-benz-gle-coupe': 'renting-mercedes-gle'};
 // Un coche solo enlaza a su ficha si la ficha existe: asi no se genera un 404.
 function carPage(b, m) {
   const s = ALIAS_PAGINA[carSlug(b,m)] || carSlug(b,m);
@@ -1483,14 +1507,45 @@ featuredCars.forEach(({c,i})=>{
 
 // Render ofertas exclusivas
 const ofertasGrid = document.getElementById('ofertas-grid');
-CARS.forEach((c, idx) => {
-  if (!c.oferta) return;
+// De la cuota mas baja a la mas alta, como pidio Adrian y como ya hace la otra
+// web. Antes salian en el orden del catalogo, que no significaba nada.
+CARS.map((c, idx) => ({c, idx}))
+  .filter(({c}) => c.oferta)
+  .sort((a, b) => a.c.p - b.c.p)
+  .forEach(({c, idx}) => {
   ofertasGrid.innerHTML += `
   <div class="oferta-card" onclick="openModal(${idx})">
     <div class="oferta-img">
       ${c.img ? `<img src="${c.img}" alt="${c.b} ${c.m}" loading="lazy">` : `<div class="car-img-placeholder">${c.b[0]}</div>`}
       <span class="oferta-sticker">Oferta exclusiva</span>
       <span class="oferta-limited">Disponibilidad limitada</span>
+    </div>
+    <div class="oferta-body">
+      <p class="oferta-type">${c.t} · ${c.fuel}</p>
+      <p class="oferta-name">${c.b} ${c.m}</p>
+      <p class="oferta-spec">${c.s}</p>
+      <div class="oferta-footer">
+        <p class="oferta-price">€${eur(c.p)}<span>/mes</span></p>
+        <a class="oferta-btn" href="${waLink(c.b,c.m)}" target="_blank" onclick="event.stopPropagation()">Lo quiero</a>
+      </div>
+    </div>
+  </div>`;
+});
+// Render coches exclusivos. Misma tarjeta que las ofertas y mismo origen de
+// datos: lo unico que cambia es el sello y que no lleva el aviso de plazas.
+const exclusivosGrid = document.getElementById('exclusivos-grid');
+// De la cuota mas baja a la mas alta, igual que en la otra web. Se ordena por
+// precio y no por una lista fija: si manana cambia una cuota, la seccion se
+// recoloca sola.
+CARS.map((c, idx) => ({c, idx}))
+  .filter(({c}) => c.excl)
+  .sort((a, b) => a.c.p - b.c.p)
+  .forEach(({c, idx}) => {
+  exclusivosGrid.innerHTML += `
+  <div class="oferta-card" onclick="openModal(${idx})">
+    <div class="oferta-img">
+      ${c.img ? `<img src="${c.img}" alt="${c.b} ${c.m}" loading="lazy">` : `<div class="car-img-placeholder">${c.b[0]}</div>`}
+      <span class="oferta-sticker">Exclusivo</span>
     </div>
     <div class="oferta-body">
       <p class="oferta-type">${c.t} · ${c.fuel}</p>
@@ -1587,7 +1642,7 @@ function openModal(idx){
           <p class="lbl">Cuota mensual desde</p>
           <p class="modal-price-num">€${eur(c.p)}<span>/mes</span></p>
         </div>
-        <div class="modal-price-right">IVA incluido<br>36 meses<br>15.000 km/año</div>
+        <div class="modal-price-right">IVA incluido<br>${c.meses} meses<br>10.000 km/año</div>
       </div>
       <div class="modal-specs">
         <div class="modal-spec">
