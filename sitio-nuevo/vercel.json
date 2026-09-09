@@ -201,16 +201,6 @@
    "permanent": false
   },
   {
-   "source": "/renting-mazda-cx-5",
-   "destination": "/",
-   "permanent": false
-  },
-  {
-   "source": "/renting-mazda-cx-5/",
-   "destination": "/",
-   "permanent": false
-  },
-  {
    "source": "/renting-mercedes-citan-mixta",
    "destination": "/",
    "permanent": false
@@ -297,16 +287,6 @@
   },
   {
    "source": "/renting-peugeot-partner/",
-   "destination": "/",
-   "permanent": false
-  },
-  {
-   "source": "/renting-renault-austral",
-   "destination": "/",
-   "permanent": false
-  },
-  {
-   "source": "/renting-renault-austral/",
    "destination": "/",
    "permanent": false
   },
