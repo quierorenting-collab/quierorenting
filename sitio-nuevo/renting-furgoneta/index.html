@@ -579,5 +579,12 @@ h1,h2,h3,.hero-title,.sec-header h2,.nav-logo,.logo,.footer-logo{
   });
 })();
 </script>
+<!-- Analitica de Vercel. Se eligio esta y no Google Analytics a proposito:
+     no pone cookies, asi que la politica de cookies de esta web —que dice
+     que no se instala ninguna— sigue siendo cierta y no hace falta pedir
+     consentimiento en las 53 paginas. Ademas se sirve desde el propio
+     dominio, asi que la CSP (script-src 'self', connect-src 'self') la deja
+     pasar sin abrirle la mano a dominios de terceros. -->
+<script defer src="/_vercel/insights/script.js"></script>
 </body>
 </html>
