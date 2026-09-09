@@ -1519,6 +1519,13 @@ function carPage(b, m) {
 }
 
 // Render featured — MG ZS primero
+// La tarjeta se ve a unos 400 px y sin esto se bajaba la foto de 1.000: 3,5 MB
+// solo en fotos al abrir el catalogo. Al lado de cada portada hay un
+// "-card.webp" de 500 px, y las tarjetas piden ese. La ventana del coche sigue
+// con la grande, que ahi si se ve a ese tamano. Si alguna vez faltara la
+// miniatura se devuelve la ruta original: se vera pesada, nunca rota.
+const mini = (u) => (u && u.endsWith('-01.webp') ? u.slice(0, -5) + '-card.webp' : u);
+
 const featuredGrid = document.getElementById('featured-grid');
 // Se descuentan los que ya salen arriba, en Ofertas y en Coches Exclusivos: los 6 coches
 // con oferta:true son tambien destacados, y desde que las ofertas subieron
@@ -1535,7 +1542,7 @@ featuredCars.forEach(({c,i})=>{
   featuredGrid.innerHTML+=`
   <div class="car-card${heroClass}" onclick="openModal(${i})" style="cursor:pointer">
     <div class="car-img-wrap">
-      ${c.img?`<img src="${c.img}" alt="${c.b} ${c.m}" loading="lazy">`:`<div class="car-img-placeholder">${c.b[0]}</div>`}
+      ${c.img?`<img src="${mini(c.img)}" alt="${c.b} ${c.m}" loading="lazy">`:`<div class="car-img-placeholder">${c.b[0]}</div>`}
       ${isMGZS?'<span class="car-badge-hero" style="background:linear-gradient(135deg,#0068ff,#0052cc)">🌿 ECO · Gran Oferta</span>':(c.badge?`<span class="car-badge ${badgeClass(c.badge)}">${c.badge}</span>`:'')}
     </div>
     <div class="car-body">
@@ -1569,7 +1576,7 @@ CARS.map((c, idx) => ({c, idx}))
   ofertasGrid.innerHTML += `
   <div class="oferta-card" onclick="openModal(${idx})">
     <div class="oferta-img">
-      ${c.img ? `<img src="${c.img}" alt="${c.b} ${c.m}" loading="lazy">` : `<div class="car-img-placeholder">${c.b[0]}</div>`}
+      ${c.img ? `<img src="${mini(c.img)}" alt="${c.b} ${c.m}" loading="lazy">` : `<div class="car-img-placeholder">${c.b[0]}</div>`}
       <span class="oferta-sticker">Oferta exclusiva</span>
       <span class="oferta-limited">Disponibilidad limitada</span>
     </div>
@@ -1597,7 +1604,7 @@ CARS.map((c, idx) => ({c, idx}))
   exclusivosGrid.innerHTML += `
   <div class="oferta-card" onclick="openModal(${idx})">
     <div class="oferta-img">
-      ${c.img ? `<img src="${c.img}" alt="${c.b} ${c.m}" loading="lazy">` : `<div class="car-img-placeholder">${c.b[0]}</div>`}
+      ${c.img ? `<img src="${mini(c.img)}" alt="${c.b} ${c.m}" loading="lazy">` : `<div class="car-img-placeholder">${c.b[0]}</div>`}
       <span class="oferta-sticker">Exclusivo</span>
     </div>
     <div class="oferta-body">
@@ -1630,7 +1637,7 @@ function renderCatalog(filter){
     catalogGrid.innerHTML+=`
     <div class="catalog-card" data-cat="${c.cat}" onclick="openModelModal(${idx})" style="cursor:pointer">
       <div class="cc-img">
-        ${c.img?`<img src="${c.img}" alt="${c.b} ${c.m}" loading="lazy">`:`<div class="cc-img-placeholder">${c.b[0]}</div>`}
+        ${c.img?`<img src="${mini(c.img)}" alt="${c.b} ${c.m}" loading="lazy">`:`<div class="cc-img-placeholder">${c.b[0]}</div>`}
         ${c.badge?`<span class="cc-badge ${badgeClass(c.badge)}">${c.badge}</span>`:''}
       </div>
       <div class="cc-body">
