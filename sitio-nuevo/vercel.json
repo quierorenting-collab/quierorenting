@@ -21,32 +21,12 @@
    "permanent": false
   },
   {
-   "source": "/renting-dacia-sandero",
-   "destination": "/",
-   "permanent": false
-  },
-  {
-   "source": "/renting-dacia-sandero/",
-   "destination": "/",
-   "permanent": false
-  },
-  {
    "source": "/renting-ebro-s700",
    "destination": "/",
    "permanent": false
   },
   {
    "source": "/renting-ebro-s700/",
-   "destination": "/",
-   "permanent": false
-  },
-  {
-   "source": "/renting-ebro-s800-phev",
-   "destination": "/",
-   "permanent": false
-  },
-  {
-   "source": "/renting-ebro-s800-phev/",
    "destination": "/",
    "permanent": false
   },
