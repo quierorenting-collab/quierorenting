@@ -359,6 +359,16 @@
    "source": "/renting-volkswagen-t-roc/",
    "destination": "/",
    "permanent": false
+  },
+  {
+   "source": "/renting-cupra-formentor-manual",
+   "destination": "/",
+   "permanent": false
+  },
+  {
+   "source": "/renting-cupra-formentor-manual/",
+   "destination": "/",
+   "permanent": false
   }
  ],
  "headers": [
