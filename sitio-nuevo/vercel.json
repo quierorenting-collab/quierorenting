@@ -131,16 +131,6 @@
    "permanent": false
   },
   {
-   "source": "/renting-mazda-3",
-   "destination": "/",
-   "permanent": false
-  },
-  {
-   "source": "/renting-mazda-3/",
-   "destination": "/",
-   "permanent": false
-  },
-  {
    "source": "/renting-mazda-6e",
    "destination": "/",
    "permanent": false
