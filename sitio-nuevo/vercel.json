@@ -11,26 +11,6 @@
    "permanent": false
   },
   {
-   "source": "/renting-citroen-c4",
-   "destination": "/",
-   "permanent": false
-  },
-  {
-   "source": "/renting-citroen-c4/",
-   "destination": "/",
-   "permanent": false
-  },
-  {
-   "source": "/renting-ebro-s700",
-   "destination": "/",
-   "permanent": false
-  },
-  {
-   "source": "/renting-ebro-s700/",
-   "destination": "/",
-   "permanent": false
-  },
-  {
    "source": "/renting-electrico",
    "destination": "/",
    "permanent": false
@@ -47,16 +27,6 @@
   },
   {
    "source": "/renting-fiat-ducato/",
-   "destination": "/",
-   "permanent": false
-  },
-  {
-   "source": "/renting-ford-puma",
-   "destination": "/",
-   "permanent": false
-  },
-  {
-   "source": "/renting-ford-puma/",
    "destination": "/",
    "permanent": false
   },
@@ -267,16 +237,6 @@
   },
   {
    "source": "/renting-peugeot-partner/",
-   "destination": "/",
-   "permanent": false
-  },
-  {
-   "source": "/renting-renault-captur",
-   "destination": "/",
-   "permanent": false
-  },
-  {
-   "source": "/renting-renault-captur/",
    "destination": "/",
    "permanent": false
   },
