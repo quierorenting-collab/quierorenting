@@ -369,6 +369,16 @@
    "source": "/renting-cupra-formentor-manual/",
    "destination": "/",
    "permanent": false
+  },
+  {
+   "source": "/renting-hyundai-tucson",
+   "destination": "/",
+   "permanent": false
+  },
+  {
+   "source": "/renting-hyundai-tucson/",
+   "destination": "/",
+   "permanent": false
   }
  ],
  "headers": [

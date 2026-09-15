@@ -169,7 +169,7 @@
   "name": "Coches en renting más vendidos - Quiero Renting",
   "description": "Los coches en renting para particulares más solicitados",
   "url": "https://quierorenting.es/#mas-vendidos",
-  "numberOfItems": 14,
+  "numberOfItems": 13,
   "itemListElement": [
     {
       "@type": "ListItem", "position": 1,
@@ -263,17 +263,6 @@
       "@type": "ListItem", "position": 9,
       "item": {
         "@type": "Product",
-        "name": "Hyundai Tucson en Renting",
-        "description": "Hyundai Tucson 1.6 HEV AT Klass 239CV en renting para particulares. Híbrido, Automático.",
-        "brand": {"@type": "Brand", "name": "Hyundai"},
-        "image": "https://quierorenting.es/fotos/hyundai-tucson-01.webp",
-        "offers": {"@type": "Offer", "price": "444", "priceCurrency": "EUR", "availability": "https://schema.org/InStock", "priceValidUntil": "2027-12-31", "url": "https://quierorenting.es/#mas-vendidos", "seller": {"@type": "Organization", "name": "Quiero Renting"}}
-      }
-    },
-    {
-      "@type": "ListItem", "position": 10,
-      "item": {
-        "@type": "Product",
         "name": "Jaecoo 5 en Renting",
         "description": "Jaecoo 5 HEV 1.5 TGDI 224CV Exclusive en renting para particulares. Híbrido, Automático.",
         "brand": {"@type": "Brand", "name": "Jaecoo"},
@@ -282,7 +271,7 @@
       }
     },
     {
-      "@type": "ListItem", "position": 11,
+      "@type": "ListItem", "position": 10,
       "item": {
         "@type": "Product",
         "name": "Toyota C-HR en Renting",
@@ -293,7 +282,7 @@
       }
     },
     {
-      "@type": "ListItem", "position": 12,
+      "@type": "ListItem", "position": 11,
       "item": {
         "@type": "Product",
         "name": "Volkswagen Tiguan en Renting",
@@ -304,7 +293,7 @@
       }
     },
     {
-      "@type": "ListItem", "position": 13,
+      "@type": "ListItem", "position": 12,
       "item": {
         "@type": "Product",
         "name": "Mercedes-Benz GLC Coupé en Renting",
@@ -315,7 +304,7 @@
       }
     },
     {
-      "@type": "ListItem", "position": 14,
+      "@type": "ListItem", "position": 13,
       "item": {
         "@type": "Product",
         "name": "Mercedes-Benz GLE Coupé en Renting",
@@ -1389,7 +1378,6 @@ h1,h2,h3,.hero-title,.sec-header h2,.nav-logo,.logo,.footer-logo{
 <li><a href="/renting-kia-stonic/">Kia Stonic</a></li>
 <li><a href="/renting-volkswagen-taigo/">Volkswagen Taigo</a></li>
 <li><a href="/renting-nissan-qashqai/">Nissan Qashqai</a></li>
-<li><a href="/renting-hyundai-tucson/">Hyundai Tucson</a></li>
 <li><a href="/renting-mg-hs/">MG HS</a></li>
 <li><a href="/renting-honda-cr-v/">Honda CR-V</a></li><li><a href="/renting-renault-austral/">Renault Austral</a></li>
 <li><a href="/renting-jaecoo-5/">Jaecoo 5</a></li>
@@ -1471,21 +1459,21 @@ const CARS = [
   {b:'SEAT',m:'León FR',s:'1.5 TSI 110kW 150CV FR Special Edition',t:'Compacto',fuel:'Gasolina',g:'Manual',p:357,cv:150,cons:'—',plazas:5,img:'fotos/seat-leon-fr-01.webp',cat:'turismo',feat:false,badge:null,meses:60},
   {b:'Cupra',m:'Formentor',s:'1.5 eTSI 150CV DSG',t:'SUV',fuel:'Gasolina',g:'Automático',p:428,cv:150,cons:'—',plazas:5,img:'fotos/cupra-formentor-01.webp',cat:'turismo',feat:true,badge:'SUV',oferta:false,meses:36},
   
-  {b:'Nissan',m:'Qashqai',s:'DIG-T 103kW 140CV mHEV 4x2 Acenta',t:'SUV',fuel:'Gasolina',g:'Manual',p:381,cv:140,cons:'—',plazas:5,img:'fotos/nissan-qashqai-01.webp',cat:'suv',feat:false,badge:'SUV',meses:60,oferta:true},
+  {b:'Nissan',m:'Qashqai',s:'DIG-T 103kW 140CV mHEV 4x2 Acenta',t:'SUV',fuel:'Gasolina',g:'Manual',p:381,cv:140,cons:'—',plazas:5,img:'fotos/nissan-qashqai-01.webp',cat:'suv',feat:false,badge:'SUV',meses:60,oferta:false},
   {b:'Audi',m:'A1',s:'Sportback Adrenalin 30 TFSI 85 kW (115 CV) S tronic',t:'Compacto',fuel:'Gasolina',g:'Automático',p:375,cv:115,cons:'—',plazas:5,img:'fotos/audi-a1-01.webp',cat:'turismo',feat:false,badge:null,meses:36},
   {b:'Nissan',m:'Juke',s:'1.6 Hybrid 145CV N-Connecta',t:'SUV',fuel:'Híbrido',g:'Automático',p:386,cv:143,cons:'—',plazas:5,img:'fotos/nissan-juke-01.webp',cat:'hibrido',feat:false,badge:'Híbrido',meses:60},
 {b:'Kia',m:'Niro',s:'1.6 GDi HEV 139CV Drive',t:'SUV',fuel:'Híbrido',g:'Automático',p:381,cv:139,cons:'—',plazas:5,img:'fotos/kia-niro-01.webp',cat:'suv',feat:false,badge:'Híbrido',oferta:false,meses:60},
 {b:'Kia',m:'Stonic',s:'Drive 1.0 TGDI MHEV 115CV',t:'SUV',fuel:'Híbrido',g:'Manual',p:360,cv:115,cons:'—',plazas:5,img:'fotos/kia-stonic-01.webp',cat:'hibrido',feat:false,badge:'Híbrido',oferta:false,meses:60},
   {b:'Opel',m:'Mokka',s:'1.2 T XHT Hybrid eDCT6 GS',t:'SUV',fuel:'Híbrido',g:'Automático',p:393,cv:145,cons:'—',plazas:5,img:'fotos/opel-mokka-01.webp',cat:'suv',feat:false,badge:'SUV',meses:60},
-{b:'Citroën',m:'C4',s:'Hybrid 145 CV Business Edition e-DCS6',t:'Compacto',fuel:'Híbrido',g:'Automático',p:374,cv:145,cons:'—',plazas:5,img:'fotos/citroen-c4-01.webp',cat:'hibrido',feat:false,badge:'Híbrido',oferta:false,meses:60},
+{b:'Citroën',m:'C4',s:'Hybrid 145 CV Business Edition e-DCS6',t:'Compacto',fuel:'Híbrido',g:'Automático',p:374,cv:145,cons:'—',plazas:5,img:'fotos/citroen-c4-01.webp',cat:'hibrido',feat:false,badge:'Híbrido',oferta:true,meses:60},
   {b:'MG',m:'HS',s:'HEV COM MY25.5',t:'SUV',fuel:'Híbrido',g:'Automático',p:405,cv:224,cons:'—',plazas:5,img:'fotos/mg-hs-01.webp',cat:'suv',feat:false,badge:'Híbrido',meses:60},
   {b:'Toyota',m:'Yaris Cross',s:'130H e-CVT 5P ACTIVE',t:'SUV',fuel:'Híbrido',g:'Automático',p:413,cv:130,cons:'—',plazas:5,img:'fotos/toyota-yaris-cross-01.webp',cat:'hibrido',feat:true,badge:'Híbrido',meses:60},
 {b:'Ford',m:'Puma',s:'Titanium 1.0 EcoBoost MHEV 125 CV',t:'SUV',fuel:'Híbrido',g:'Manual',p:356,cv:125,cons:'—',plazas:5,img:'fotos/ford-puma-01.webp',cat:'hibrido',feat:false,badge:'Híbrido',oferta:false,meses:36},
-{b:'Renault',m:'Captur',s:'Evolution ECO-G 120 CV',t:'SUV',fuel:'Gasolina',g:'Manual',p:331,cv:120,cons:'—',plazas:5,img:'fotos/renault-captur-01.webp',cat:'suv',feat:false,badge:'SUV',oferta:false,meses:36},
+{b:'Renault',m:'Captur',s:'Evolution ECO-G 120 CV',t:'SUV',fuel:'Gasolina',g:'Manual',p:331,cv:120,cons:'—',plazas:5,img:'fotos/renault-captur-01.webp',cat:'suv',feat:false,badge:'SUV',oferta:true,meses:36},
   {b:'Ebro',m:'S400',s:'1.5 DHE HEV Excellence CVT',t:'SUV',fuel:'Híbrido',g:'Automático',p:442,cv:163,cons:'—',plazas:5,img:'fotos/ebro-s400-01.webp',cat:'hibrido',feat:true,badge:'Híbrido',oferta:false,meses:60},
-{b:'Ebro',m:'S700',s:'1.5 TGDI PHEV 1DHT 2WD Luxury',t:'SUV',fuel:'PHEV',g:'Automático',p:501,cv:null,cons:'—',plazas:5,img:'fotos/ebro-s700-01.webp',cat:'hibrido',feat:false,badge:'Híbrido',oferta:false,meses:36},
+{b:'Ebro',m:'S700',s:'1.5 TGDI PHEV 1DHT 2WD Luxury',t:'SUV',fuel:'PHEV',g:'Automático',p:501,cv:null,cons:'—',plazas:5,img:'fotos/ebro-s700-01.webp',cat:'hibrido',feat:false,badge:'Híbrido',oferta:true,meses:36},
 {b:'Ebro',m:'S800 PHEV',s:'1.5 TGDI PHEV Luxury E-CVT',t:'SUV',fuel:'PHEV',g:'Automático',p:610,cv:279,cons:'—',plazas:5,img:'fotos/ebro-s800-01.webp',cat:'hibrido',feat:false,badge:'Híbrido',oferta:false,meses:60},
-  {b:'Hyundai',m:'Tucson',s:'1.6 HEV AT Klass 239CV',t:'SUV',fuel:'Híbrido',g:'Automático',p:444,cv:239,cons:'—',plazas:5,img:'fotos/hyundai-tucson-01.webp',cat:'hibrido',feat:true,badge:'Híbrido',meses:60,oferta:true},{b:'Renault',m:'Austral',s:'Evolution e-Tech Full Hybrid 200 CV',t:'SUV',fuel:'Híbrido',g:'Automático',p:497,cv:200,cons:'—',plazas:5,img:'fotos/renault-austral-01.webp',cat:'suv',feat:false,badge:'SUV',meses:60},
+  {b:'Renault',m:'Austral',s:'Evolution e-Tech Full Hybrid 200 CV',t:'SUV',fuel:'Híbrido',g:'Automático',p:497,cv:200,cons:'—',plazas:5,img:'fotos/renault-austral-01.webp',cat:'suv',feat:false,badge:'SUV',meses:60},
   {b:'Jaecoo',m:'5',s:'HEV 1.5 TGDI 224CV Exclusive',t:'SUV',fuel:'Híbrido',g:'Automático',p:474,cv:224,cons:'—',plazas:5,img:'fotos/jaecoo-5-01.webp',cat:'hibrido',feat:true,badge:'Híbrido',meses:60},
   {b:'Mercedes-Benz',m:'Citan',s:'110 CDI 70kW Furgón Base Cargo',t:'Furgoneta',fuel:'Diesel',g:'Manual',p:450,cv:95,cons:'—',plazas:2,img:'fotos/mercedes-citan-01.webp',cat:'furgoneta',feat:false,badge:null,meses:60},
   {b:'Toyota',m:'C-HR',s:'1.8 ADVANCE HYBRID 140 e-CVT',t:'SUV',fuel:'Híbrido',g:'Automático',p:471,cv:140,cons:'—',plazas:5,img:'fotos/toyota-chr-01.webp',cat:'hibrido',feat:true,badge:'Híbrido',meses:60},
@@ -1546,7 +1534,7 @@ function carSlug(b, m) {
   return 'renting-'+sl(b)+'-'+sl(m);
 }
 
-const PAGINAS = new Set(['renting-kia-stonic','renting-kia-niro','renting-audi-a1','renting-mazda-2','renting-mazda-3','renting-seat-leon','renting-seat-leon-fr','renting-cupra-formentor','renting-toyota-c-hr','renting-mazda-cx-60','renting-mg-hs','renting-honda-cr-v','renting-jaecoo-5','renting-jaecoo-7','renting-omoda-5','renting-omoda-7','renting-toyota-hilux','renting-bmw-x3','renting-mazda-cx-5','renting-peugeot-rifter','renting-renault-austral','renting-citroen-c4','renting-ford-puma','renting-renault-captur','renting-ebro-s700','renting-dacia-sandero','renting-lancia-ypsilon','renting-byd-dolphin-surf','renting-ebro-s800-phev','renting-alfa-romeo-junior','renting-bmw-x1','renting-byd-atto-2','renting-citroen-berlingo','renting-ebro-s400','renting-hyundai-tucson','renting-lynk-co-01','renting-lynk-co-08','renting-maserati-grecale','renting-mazda-cx-30','renting-mercedes-citan','renting-mercedes-gla','renting-mercedes-glc','renting-mercedes-gle','renting-mercedes-gle-350d','renting-nissan-interstar','renting-nissan-juke','renting-nissan-qashqai','renting-opel-corsa','renting-opel-mokka','renting-peugeot-208','renting-peugeot-boxer','renting-seat-ibiza','renting-toyota-yaris','renting-toyota-yaris-cross','renting-volkswagen-polo','renting-volkswagen-taigo','renting-volkswagen-tiguan']);
+const PAGINAS = new Set(['renting-kia-stonic','renting-kia-niro','renting-audi-a1','renting-mazda-2','renting-mazda-3','renting-seat-leon','renting-seat-leon-fr','renting-cupra-formentor','renting-toyota-c-hr','renting-mazda-cx-60','renting-mg-hs','renting-honda-cr-v','renting-jaecoo-5','renting-jaecoo-7','renting-omoda-5','renting-omoda-7','renting-toyota-hilux','renting-bmw-x3','renting-mazda-cx-5','renting-peugeot-rifter','renting-renault-austral','renting-citroen-c4','renting-ford-puma','renting-renault-captur','renting-ebro-s700','renting-dacia-sandero','renting-lancia-ypsilon','renting-byd-dolphin-surf','renting-ebro-s800-phev','renting-alfa-romeo-junior','renting-bmw-x1','renting-byd-atto-2','renting-citroen-berlingo','renting-ebro-s400','renting-lynk-co-01','renting-lynk-co-08','renting-maserati-grecale','renting-mazda-cx-30','renting-mercedes-citan','renting-mercedes-gla','renting-mercedes-glc','renting-mercedes-gle','renting-mercedes-gle-350d','renting-nissan-interstar','renting-nissan-juke','renting-nissan-qashqai','renting-opel-corsa','renting-opel-mokka','renting-peugeot-208','renting-peugeot-boxer','renting-seat-ibiza','renting-toyota-yaris','renting-toyota-yaris-cross','renting-volkswagen-polo','renting-volkswagen-taigo','renting-volkswagen-tiguan']);
 // Dos fichas se publicaron con el nombre corto de la marca; el catalogo usa el oficial.
 const ALIAS_PAGINA = {'renting-mercedes-benz-citan': 'renting-mercedes-citan', 'renting-mercedes-benz-gla': 'renting-mercedes-gla', 'renting-mercedes-benz-glc-coupe': 'renting-mercedes-glc', 'renting-mercedes-benz-gle-350d-coupe': 'renting-mercedes-gle-350d', 'renting-mercedes-benz-gle-coupe': 'renting-mercedes-gle'};
 // Un coche solo enlaza a su ficha si la ficha existe: asi no se genera un 404.
