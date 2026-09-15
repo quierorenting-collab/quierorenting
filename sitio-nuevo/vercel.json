@@ -101,16 +101,6 @@
    "permanent": false
   },
   {
-   "source": "/renting-kia-stonic",
-   "destination": "/",
-   "permanent": false
-  },
-  {
-   "source": "/renting-kia-stonic/",
-   "destination": "/",
-   "permanent": false
-  },
-  {
    "source": "/renting-maxus-deliver-9",
    "destination": "/",
    "permanent": false
