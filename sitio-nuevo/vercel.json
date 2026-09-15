@@ -11,16 +11,6 @@
    "permanent": false
   },
   {
-   "source": "/renting-electrico",
-   "destination": "/",
-   "permanent": false
-  },
-  {
-   "source": "/renting-electrico/",
-   "destination": "/",
-   "permanent": false
-  },
-  {
    "source": "/renting-fiat-ducato",
    "destination": "/",
    "permanent": false
