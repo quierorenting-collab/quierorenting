@@ -1,374 +1,1719 @@
 {
  "redirects": [
   {
+   "source": "/renting-suv",
+   "destination": "https://movilease.es/renting-suv",
+   "permanent": true
+  },
+  {
+   "source": "/renting-suv/",
+   "destination": "https://movilease.es/renting-suv",
+   "permanent": true
+  },
+  {
+   "source": "/renting-suv/index.html",
+   "destination": "https://movilease.es/renting-suv",
+   "permanent": true
+  },
+  {
+   "source": "/renting-hibrido",
+   "destination": "https://movilease.es/renting-hibrido",
+   "permanent": true
+  },
+  {
+   "source": "/renting-hibrido/",
+   "destination": "https://movilease.es/renting-hibrido",
+   "permanent": true
+  },
+  {
+   "source": "/renting-hibrido/index.html",
+   "destination": "https://movilease.es/renting-hibrido",
+   "permanent": true
+  },
+  {
+   "source": "/renting-electrico",
+   "destination": "https://movilease.es/renting-electrico",
+   "permanent": true
+  },
+  {
+   "source": "/renting-electrico/",
+   "destination": "https://movilease.es/renting-electrico",
+   "permanent": true
+  },
+  {
+   "source": "/renting-electrico/index.html",
+   "destination": "https://movilease.es/renting-electrico",
+   "permanent": true
+  },
+  {
+   "source": "/renting-furgoneta",
+   "destination": "https://movilease.es/renting-furgoneta",
+   "permanent": true
+  },
+  {
+   "source": "/renting-furgoneta/",
+   "destination": "https://movilease.es/renting-furgoneta",
+   "permanent": true
+  },
+  {
+   "source": "/renting-furgoneta/index.html",
+   "destination": "https://movilease.es/renting-furgoneta",
+   "permanent": true
+  },
+  {
+   "source": "/renting-barato",
+   "destination": "https://movilease.es/renting-barato",
+   "permanent": true
+  },
+  {
+   "source": "/renting-barato/",
+   "destination": "https://movilease.es/renting-barato",
+   "permanent": true
+  },
+  {
+   "source": "/renting-barato/index.html",
+   "destination": "https://movilease.es/renting-barato",
+   "permanent": true
+  },
+  {
+   "source": "/renting-automatico",
+   "destination": "https://movilease.es/renting-automatico",
+   "permanent": true
+  },
+  {
+   "source": "/renting-automatico/",
+   "destination": "https://movilease.es/renting-automatico",
+   "permanent": true
+  },
+  {
+   "source": "/renting-automatico/index.html",
+   "destination": "https://movilease.es/renting-automatico",
+   "permanent": true
+  },
+  {
+   "source": "/renting-seat-ibiza",
+   "destination": "https://movilease.es/renting-seat-ibiza",
+   "permanent": true
+  },
+  {
+   "source": "/renting-seat-ibiza/",
+   "destination": "https://movilease.es/renting-seat-ibiza",
+   "permanent": true
+  },
+  {
+   "source": "/renting-seat-ibiza/index.html",
+   "destination": "https://movilease.es/renting-seat-ibiza",
+   "permanent": true
+  },
+  {
+   "source": "/renting-peugeot-208",
+   "destination": "https://movilease.es/renting-peugeot-208",
+   "permanent": true
+  },
+  {
+   "source": "/renting-peugeot-208/",
+   "destination": "https://movilease.es/renting-peugeot-208",
+   "permanent": true
+  },
+  {
+   "source": "/renting-peugeot-208/index.html",
+   "destination": "https://movilease.es/renting-peugeot-208",
+   "permanent": true
+  },
+  {
+   "source": "/renting-opel-corsa",
+   "destination": "https://movilease.es/renting-opel-corsa",
+   "permanent": true
+  },
+  {
+   "source": "/renting-opel-corsa/",
+   "destination": "https://movilease.es/renting-opel-corsa",
+   "permanent": true
+  },
+  {
+   "source": "/renting-opel-corsa/index.html",
+   "destination": "https://movilease.es/renting-opel-corsa",
+   "permanent": true
+  },
+  {
+   "source": "/renting-volkswagen-polo",
+   "destination": "https://movilease.es/renting-volkswagen-polo",
+   "permanent": true
+  },
+  {
+   "source": "/renting-volkswagen-polo/",
+   "destination": "https://movilease.es/renting-volkswagen-polo",
+   "permanent": true
+  },
+  {
+   "source": "/renting-volkswagen-polo/index.html",
+   "destination": "https://movilease.es/renting-volkswagen-polo",
+   "permanent": true
+  },
+  {
+   "source": "/renting-citroen-berlingo",
+   "destination": "https://movilease.es/renting-citroen-berlingo",
+   "permanent": true
+  },
+  {
+   "source": "/renting-citroen-berlingo/",
+   "destination": "https://movilease.es/renting-citroen-berlingo",
+   "permanent": true
+  },
+  {
+   "source": "/renting-citroen-berlingo/index.html",
+   "destination": "https://movilease.es/renting-citroen-berlingo",
+   "permanent": true
+  },
+  {
+   "source": "/renting-peugeot-rifter",
+   "destination": "https://movilease.es/renting-peugeot-rifter",
+   "permanent": true
+  },
+  {
+   "source": "/renting-peugeot-rifter/",
+   "destination": "https://movilease.es/renting-peugeot-rifter",
+   "permanent": true
+  },
+  {
+   "source": "/renting-peugeot-rifter/index.html",
+   "destination": "https://movilease.es/renting-peugeot-rifter",
+   "permanent": true
+  },
+  {
+   "source": "/renting-alfa-romeo-junior",
+   "destination": "https://movilease.es/renting-alfa-romeo-junior",
+   "permanent": true
+  },
+  {
+   "source": "/renting-alfa-romeo-junior/",
+   "destination": "https://movilease.es/renting-alfa-romeo-junior",
+   "permanent": true
+  },
+  {
+   "source": "/renting-alfa-romeo-junior/index.html",
+   "destination": "https://movilease.es/renting-alfa-romeo-junior",
+   "permanent": true
+  },
+  {
+   "source": "/renting-byd-atto-2",
+   "destination": "https://movilease.es/renting-byd-atto-2",
+   "permanent": true
+  },
+  {
+   "source": "/renting-byd-atto-2/",
+   "destination": "https://movilease.es/renting-byd-atto-2",
+   "permanent": true
+  },
+  {
+   "source": "/renting-byd-atto-2/index.html",
+   "destination": "https://movilease.es/renting-byd-atto-2",
+   "permanent": true
+  },
+  {
+   "source": "/renting-lynk-co-01",
+   "destination": "https://movilease.es/renting-lynk-co-01",
+   "permanent": true
+  },
+  {
+   "source": "/renting-lynk-co-01/",
+   "destination": "https://movilease.es/renting-lynk-co-01",
+   "permanent": true
+  },
+  {
+   "source": "/renting-lynk-co-01/index.html",
+   "destination": "https://movilease.es/renting-lynk-co-01",
+   "permanent": true
+  },
+  {
+   "source": "/renting-lynk-co-08",
+   "destination": "https://movilease.es/renting-lynk-co-08",
+   "permanent": true
+  },
+  {
+   "source": "/renting-lynk-co-08/",
+   "destination": "https://movilease.es/renting-lynk-co-08",
+   "permanent": true
+  },
+  {
+   "source": "/renting-lynk-co-08/index.html",
+   "destination": "https://movilease.es/renting-lynk-co-08",
+   "permanent": true
+  },
+  {
+   "source": "/renting-bmw-x1",
+   "destination": "https://movilease.es/renting-bmw-x1",
+   "permanent": true
+  },
+  {
+   "source": "/renting-bmw-x1/",
+   "destination": "https://movilease.es/renting-bmw-x1",
+   "permanent": true
+  },
+  {
+   "source": "/renting-bmw-x1/index.html",
+   "destination": "https://movilease.es/renting-bmw-x1",
+   "permanent": true
+  },
+  {
+   "source": "/renting-bmw-x3",
+   "destination": "https://movilease.es/renting-bmw-x3",
+   "permanent": true
+  },
+  {
+   "source": "/renting-bmw-x3/",
+   "destination": "https://movilease.es/renting-bmw-x3",
+   "permanent": true
+  },
+  {
+   "source": "/renting-bmw-x3/index.html",
+   "destination": "https://movilease.es/renting-bmw-x3",
+   "permanent": true
+  },
+  {
+   "source": "/renting-maserati-grecale",
+   "destination": "https://movilease.es/renting-maserati-grecale",
+   "permanent": true
+  },
+  {
+   "source": "/renting-maserati-grecale/",
+   "destination": "https://movilease.es/renting-maserati-grecale",
+   "permanent": true
+  },
+  {
+   "source": "/renting-maserati-grecale/index.html",
+   "destination": "https://movilease.es/renting-maserati-grecale",
+   "permanent": true
+  },
+  {
+   "source": "/renting-mercedes-gle-350d",
+   "destination": "https://movilease.es/renting-mercedes-benz-gle-350d-coupe",
+   "permanent": true
+  },
+  {
+   "source": "/renting-mercedes-gle-350d/",
+   "destination": "https://movilease.es/renting-mercedes-benz-gle-350d-coupe",
+   "permanent": true
+  },
+  {
+   "source": "/renting-mercedes-gle-350d/index.html",
+   "destination": "https://movilease.es/renting-mercedes-benz-gle-350d-coupe",
+   "permanent": true
+  },
+  {
+   "source": "/aviso-legal",
+   "destination": "https://movilease.es/aviso-legal",
+   "permanent": true
+  },
+  {
+   "source": "/aviso-legal/",
+   "destination": "https://movilease.es/aviso-legal",
+   "permanent": true
+  },
+  {
+   "source": "/aviso-legal/index.html",
+   "destination": "https://movilease.es/aviso-legal",
+   "permanent": true
+  },
+  {
+   "source": "/politica-de-privacidad",
+   "destination": "https://movilease.es/politica-privacidad",
+   "permanent": true
+  },
+  {
+   "source": "/politica-de-privacidad/",
+   "destination": "https://movilease.es/politica-privacidad",
+   "permanent": true
+  },
+  {
+   "source": "/politica-de-privacidad/index.html",
+   "destination": "https://movilease.es/politica-privacidad",
+   "permanent": true
+  },
+  {
+   "source": "/politica-de-cookies",
+   "destination": "https://movilease.es/politica-cookies",
+   "permanent": true
+  },
+  {
+   "source": "/politica-de-cookies/",
+   "destination": "https://movilease.es/politica-cookies",
+   "permanent": true
+  },
+  {
+   "source": "/politica-de-cookies/index.html",
+   "destination": "https://movilease.es/politica-cookies",
+   "permanent": true
+  },
+  {
+   "source": "/renting-nissan-juke",
+   "destination": "https://movilease.es/renting-nissan-juke",
+   "permanent": true
+  },
+  {
+   "source": "/renting-nissan-juke/",
+   "destination": "https://movilease.es/renting-nissan-juke",
+   "permanent": true
+  },
+  {
+   "source": "/renting-nissan-juke/index.html",
+   "destination": "https://movilease.es/renting-nissan-juke",
+   "permanent": true
+  },
+  {
+   "source": "/renting-toyota-yaris",
+   "destination": "https://movilease.es/renting-toyota-yaris",
+   "permanent": true
+  },
+  {
+   "source": "/renting-toyota-yaris/",
+   "destination": "https://movilease.es/renting-toyota-yaris",
+   "permanent": true
+  },
+  {
+   "source": "/renting-toyota-yaris/index.html",
+   "destination": "https://movilease.es/renting-toyota-yaris",
+   "permanent": true
+  },
+  {
+   "source": "/renting-opel-mokka",
+   "destination": "https://movilease.es/renting-opel-mokka",
+   "permanent": true
+  },
+  {
+   "source": "/renting-opel-mokka/",
+   "destination": "https://movilease.es/renting-opel-mokka",
+   "permanent": true
+  },
+  {
+   "source": "/renting-opel-mokka/index.html",
+   "destination": "https://movilease.es/renting-opel-mokka",
+   "permanent": true
+  },
+  {
+   "source": "/renting-mazda-cx-30",
+   "destination": "https://movilease.es/renting-mazda-cx-30",
+   "permanent": true
+  },
+  {
+   "source": "/renting-mazda-cx-30/",
+   "destination": "https://movilease.es/renting-mazda-cx-30",
+   "permanent": true
+  },
+  {
+   "source": "/renting-mazda-cx-30/index.html",
+   "destination": "https://movilease.es/renting-mazda-cx-30",
+   "permanent": true
+  },
+  {
+   "source": "/renting-mazda-cx-5",
+   "destination": "https://movilease.es/renting-mazda-cx-5",
+   "permanent": true
+  },
+  {
+   "source": "/renting-mazda-cx-5/",
+   "destination": "https://movilease.es/renting-mazda-cx-5",
+   "permanent": true
+  },
+  {
+   "source": "/renting-mazda-cx-5/index.html",
+   "destination": "https://movilease.es/renting-mazda-cx-5",
+   "permanent": true
+  },
+  {
+   "source": "/renting-volkswagen-taigo",
+   "destination": "https://movilease.es/renting-volkswagen-taigo",
+   "permanent": true
+  },
+  {
+   "source": "/renting-volkswagen-taigo/",
+   "destination": "https://movilease.es/renting-volkswagen-taigo",
+   "permanent": true
+  },
+  {
+   "source": "/renting-volkswagen-taigo/index.html",
+   "destination": "https://movilease.es/renting-volkswagen-taigo",
+   "permanent": true
+  },
+  {
+   "source": "/renting-renault-austral",
+   "destination": "https://movilease.es/renting-renault-austral",
+   "permanent": true
+  },
+  {
+   "source": "/renting-renault-austral/",
+   "destination": "https://movilease.es/renting-renault-austral",
+   "permanent": true
+  },
+  {
+   "source": "/renting-renault-austral/index.html",
+   "destination": "https://movilease.es/renting-renault-austral",
+   "permanent": true
+  },
+  {
+   "source": "/renting-nissan-qashqai",
+   "destination": "https://movilease.es/renting-nissan-qashqai",
+   "permanent": true
+  },
+  {
+   "source": "/renting-nissan-qashqai/",
+   "destination": "https://movilease.es/renting-nissan-qashqai",
+   "permanent": true
+  },
+  {
+   "source": "/renting-nissan-qashqai/index.html",
+   "destination": "https://movilease.es/renting-nissan-qashqai",
+   "permanent": true
+  },
+  {
+   "source": "/renting-mercedes-gle",
+   "destination": "https://movilease.es/renting-mercedes-benz-gle-coupe",
+   "permanent": true
+  },
+  {
+   "source": "/renting-mercedes-gle/",
+   "destination": "https://movilease.es/renting-mercedes-benz-gle-coupe",
+   "permanent": true
+  },
+  {
+   "source": "/renting-mercedes-gle/index.html",
+   "destination": "https://movilease.es/renting-mercedes-benz-gle-coupe",
+   "permanent": true
+  },
+  {
+   "source": "/renting-mercedes-citan",
+   "destination": "https://movilease.es/renting-mercedes-benz-citan",
+   "permanent": true
+  },
+  {
+   "source": "/renting-mercedes-citan/",
+   "destination": "https://movilease.es/renting-mercedes-benz-citan",
+   "permanent": true
+  },
+  {
+   "source": "/renting-mercedes-citan/index.html",
+   "destination": "https://movilease.es/renting-mercedes-benz-citan",
+   "permanent": true
+  },
+  {
+   "source": "/renting-ebro-s400",
+   "destination": "https://movilease.es/renting-ebro-s400",
+   "permanent": true
+  },
+  {
+   "source": "/renting-ebro-s400/",
+   "destination": "https://movilease.es/renting-ebro-s400",
+   "permanent": true
+  },
+  {
+   "source": "/renting-ebro-s400/index.html",
+   "destination": "https://movilease.es/renting-ebro-s400",
+   "permanent": true
+  },
+  {
+   "source": "/renting-toyota-yaris-cross",
+   "destination": "https://movilease.es/renting-toyota-yaris-cross",
+   "permanent": true
+  },
+  {
+   "source": "/renting-toyota-yaris-cross/",
+   "destination": "https://movilease.es/renting-toyota-yaris-cross",
+   "permanent": true
+  },
+  {
+   "source": "/renting-toyota-yaris-cross/index.html",
+   "destination": "https://movilease.es/renting-toyota-yaris-cross",
+   "permanent": true
+  },
+  {
+   "source": "/renting-volkswagen-tiguan",
+   "destination": "https://movilease.es/renting-volkswagen-tiguan",
+   "permanent": true
+  },
+  {
+   "source": "/renting-volkswagen-tiguan/",
+   "destination": "https://movilease.es/renting-volkswagen-tiguan",
+   "permanent": true
+  },
+  {
+   "source": "/renting-volkswagen-tiguan/index.html",
+   "destination": "https://movilease.es/renting-volkswagen-tiguan",
+   "permanent": true
+  },
+  {
+   "source": "/renting-peugeot-boxer",
+   "destination": "https://movilease.es/renting-peugeot-boxer",
+   "permanent": true
+  },
+  {
+   "source": "/renting-peugeot-boxer/",
+   "destination": "https://movilease.es/renting-peugeot-boxer",
+   "permanent": true
+  },
+  {
+   "source": "/renting-peugeot-boxer/index.html",
+   "destination": "https://movilease.es/renting-peugeot-boxer",
+   "permanent": true
+  },
+  {
+   "source": "/renting-nissan-interstar",
+   "destination": "https://movilease.es/renting-nissan-interstar",
+   "permanent": true
+  },
+  {
+   "source": "/renting-nissan-interstar/",
+   "destination": "https://movilease.es/renting-nissan-interstar",
+   "permanent": true
+  },
+  {
+   "source": "/renting-nissan-interstar/index.html",
+   "destination": "https://movilease.es/renting-nissan-interstar",
+   "permanent": true
+  },
+  {
+   "source": "/renting-mercedes-gla",
+   "destination": "https://movilease.es/renting-mercedes-benz-gla",
+   "permanent": true
+  },
+  {
+   "source": "/renting-mercedes-gla/",
+   "destination": "https://movilease.es/renting-mercedes-benz-gla",
+   "permanent": true
+  },
+  {
+   "source": "/renting-mercedes-gla/index.html",
+   "destination": "https://movilease.es/renting-mercedes-benz-gla",
+   "permanent": true
+  },
+  {
+   "source": "/renting-mercedes-glc",
+   "destination": "https://movilease.es/renting-mercedes-benz-glc-coupe",
+   "permanent": true
+  },
+  {
+   "source": "/renting-mercedes-glc/",
+   "destination": "https://movilease.es/renting-mercedes-benz-glc-coupe",
+   "permanent": true
+  },
+  {
+   "source": "/renting-mercedes-glc/index.html",
+   "destination": "https://movilease.es/renting-mercedes-benz-glc-coupe",
+   "permanent": true
+  },
+  {
+   "source": "/renting-coches-madrid",
+   "destination": "https://movilease.es/renting-coches-madrid",
+   "permanent": true
+  },
+  {
+   "source": "/renting-coches-madrid/",
+   "destination": "https://movilease.es/renting-coches-madrid",
+   "permanent": true
+  },
+  {
+   "source": "/renting-coches-madrid/index.html",
+   "destination": "https://movilease.es/renting-coches-madrid",
+   "permanent": true
+  },
+  {
+   "source": "/renting-coches-barcelona",
+   "destination": "https://movilease.es/renting-coches-barcelona",
+   "permanent": true
+  },
+  {
+   "source": "/renting-coches-barcelona/",
+   "destination": "https://movilease.es/renting-coches-barcelona",
+   "permanent": true
+  },
+  {
+   "source": "/renting-coches-barcelona/index.html",
+   "destination": "https://movilease.es/renting-coches-barcelona",
+   "permanent": true
+  },
+  {
+   "source": "/renting-coches-valencia",
+   "destination": "https://movilease.es/renting-coches-valencia",
+   "permanent": true
+  },
+  {
+   "source": "/renting-coches-valencia/",
+   "destination": "https://movilease.es/renting-coches-valencia",
+   "permanent": true
+  },
+  {
+   "source": "/renting-coches-valencia/index.html",
+   "destination": "https://movilease.es/renting-coches-valencia",
+   "permanent": true
+  },
+  {
+   "source": "/renting-coches-sevilla",
+   "destination": "https://movilease.es/renting-coches-sevilla",
+   "permanent": true
+  },
+  {
+   "source": "/renting-coches-sevilla/",
+   "destination": "https://movilease.es/renting-coches-sevilla",
+   "permanent": true
+  },
+  {
+   "source": "/renting-coches-sevilla/index.html",
+   "destination": "https://movilease.es/renting-coches-sevilla",
+   "permanent": true
+  },
+  {
+   "source": "/renting-coches-bilbao",
+   "destination": "https://movilease.es/renting-coches-bilbao",
+   "permanent": true
+  },
+  {
+   "source": "/renting-coches-bilbao/",
+   "destination": "https://movilease.es/renting-coches-bilbao",
+   "permanent": true
+  },
+  {
+   "source": "/renting-coches-bilbao/index.html",
+   "destination": "https://movilease.es/renting-coches-bilbao",
+   "permanent": true
+  },
+  {
+   "source": "/renting-coches-zaragoza",
+   "destination": "https://movilease.es/renting-coches-zaragoza",
+   "permanent": true
+  },
+  {
+   "source": "/renting-coches-zaragoza/",
+   "destination": "https://movilease.es/renting-coches-zaragoza",
+   "permanent": true
+  },
+  {
+   "source": "/renting-coches-zaragoza/index.html",
+   "destination": "https://movilease.es/renting-coches-zaragoza",
+   "permanent": true
+  },
+  {
+   "source": "/renting-coches-malaga",
+   "destination": "https://movilease.es/renting-coches-malaga",
+   "permanent": true
+  },
+  {
+   "source": "/renting-coches-malaga/",
+   "destination": "https://movilease.es/renting-coches-malaga",
+   "permanent": true
+  },
+  {
+   "source": "/renting-coches-malaga/index.html",
+   "destination": "https://movilease.es/renting-coches-malaga",
+   "permanent": true
+  },
+  {
+   "source": "/renting-coches-alicante",
+   "destination": "https://movilease.es/renting-coches-alicante",
+   "permanent": true
+  },
+  {
+   "source": "/renting-coches-alicante/",
+   "destination": "https://movilease.es/renting-coches-alicante",
+   "permanent": true
+  },
+  {
+   "source": "/renting-coches-alicante/index.html",
+   "destination": "https://movilease.es/renting-coches-alicante",
+   "permanent": true
+  },
+  {
+   "source": "/renting-coches-murcia",
+   "destination": "https://movilease.es/renting-coches-murcia",
+   "permanent": true
+  },
+  {
+   "source": "/renting-coches-murcia/",
+   "destination": "https://movilease.es/renting-coches-murcia",
+   "permanent": true
+  },
+  {
+   "source": "/renting-coches-murcia/index.html",
+   "destination": "https://movilease.es/renting-coches-murcia",
+   "permanent": true
+  },
+  {
+   "source": "/renting-coches-valladolid",
+   "destination": "https://movilease.es/renting-coches-valladolid",
+   "permanent": true
+  },
+  {
+   "source": "/renting-coches-valladolid/",
+   "destination": "https://movilease.es/renting-coches-valladolid",
+   "permanent": true
+  },
+  {
+   "source": "/renting-coches-valladolid/index.html",
+   "destination": "https://movilease.es/renting-coches-valladolid",
+   "permanent": true
+  },
+  {
+   "source": "/renting-coches-palma",
+   "destination": "https://movilease.es/renting-coches-palma",
+   "permanent": true
+  },
+  {
+   "source": "/renting-coches-palma/",
+   "destination": "https://movilease.es/renting-coches-palma",
+   "permanent": true
+  },
+  {
+   "source": "/renting-coches-palma/index.html",
+   "destination": "https://movilease.es/renting-coches-palma",
+   "permanent": true
+  },
+  {
+   "source": "/renting-coches-las-palmas",
+   "destination": "https://movilease.es/renting-coches-las-palmas",
+   "permanent": true
+  },
+  {
+   "source": "/renting-coches-las-palmas/",
+   "destination": "https://movilease.es/renting-coches-las-palmas",
+   "permanent": true
+  },
+  {
+   "source": "/renting-coches-las-palmas/index.html",
+   "destination": "https://movilease.es/renting-coches-las-palmas",
+   "permanent": true
+  },
+  {
+   "source": "/renting-dacia-sandero",
+   "destination": "https://movilease.es/renting-dacia-sandero",
+   "permanent": true
+  },
+  {
+   "source": "/renting-dacia-sandero/",
+   "destination": "https://movilease.es/renting-dacia-sandero",
+   "permanent": true
+  },
+  {
+   "source": "/renting-dacia-sandero/index.html",
+   "destination": "https://movilease.es/renting-dacia-sandero",
+   "permanent": true
+  },
+  {
+   "source": "/renting-lancia-ypsilon",
+   "destination": "https://movilease.es/renting-lancia-ypsilon",
+   "permanent": true
+  },
+  {
+   "source": "/renting-lancia-ypsilon/",
+   "destination": "https://movilease.es/renting-lancia-ypsilon",
+   "permanent": true
+  },
+  {
+   "source": "/renting-lancia-ypsilon/index.html",
+   "destination": "https://movilease.es/renting-lancia-ypsilon",
+   "permanent": true
+  },
+  {
+   "source": "/renting-byd-dolphin-surf",
+   "destination": "https://movilease.es/renting-byd-dolphin-surf",
+   "permanent": true
+  },
+  {
+   "source": "/renting-byd-dolphin-surf/",
+   "destination": "https://movilease.es/renting-byd-dolphin-surf",
+   "permanent": true
+  },
+  {
+   "source": "/renting-byd-dolphin-surf/index.html",
+   "destination": "https://movilease.es/renting-byd-dolphin-surf",
+   "permanent": true
+  },
+  {
+   "source": "/renting-ebro-s800-phev",
+   "destination": "https://movilease.es/renting-ebro-s800-phev",
+   "permanent": true
+  },
+  {
+   "source": "/renting-ebro-s800-phev/",
+   "destination": "https://movilease.es/renting-ebro-s800-phev",
+   "permanent": true
+  },
+  {
+   "source": "/renting-ebro-s800-phev/index.html",
+   "destination": "https://movilease.es/renting-ebro-s800-phev",
+   "permanent": true
+  },
+  {
+   "source": "/renting-citroen-c4",
+   "destination": "https://movilease.es/renting-citroen-c4",
+   "permanent": true
+  },
+  {
+   "source": "/renting-citroen-c4/",
+   "destination": "https://movilease.es/renting-citroen-c4",
+   "permanent": true
+  },
+  {
+   "source": "/renting-citroen-c4/index.html",
+   "destination": "https://movilease.es/renting-citroen-c4",
+   "permanent": true
+  },
+  {
+   "source": "/renting-ford-puma",
+   "destination": "https://movilease.es/renting-ford-puma",
+   "permanent": true
+  },
+  {
+   "source": "/renting-ford-puma/",
+   "destination": "https://movilease.es/renting-ford-puma",
+   "permanent": true
+  },
+  {
+   "source": "/renting-ford-puma/index.html",
+   "destination": "https://movilease.es/renting-ford-puma",
+   "permanent": true
+  },
+  {
+   "source": "/renting-renault-captur",
+   "destination": "https://movilease.es/renting-renault-captur",
+   "permanent": true
+  },
+  {
+   "source": "/renting-renault-captur/",
+   "destination": "https://movilease.es/renting-renault-captur",
+   "permanent": true
+  },
+  {
+   "source": "/renting-renault-captur/index.html",
+   "destination": "https://movilease.es/renting-renault-captur",
+   "permanent": true
+  },
+  {
+   "source": "/renting-ebro-s700",
+   "destination": "https://movilease.es/renting-ebro-s700",
+   "permanent": true
+  },
+  {
+   "source": "/renting-ebro-s700/",
+   "destination": "https://movilease.es/renting-ebro-s700",
+   "permanent": true
+  },
+  {
+   "source": "/renting-ebro-s700/index.html",
+   "destination": "https://movilease.es/renting-ebro-s700",
+   "permanent": true
+  },
+  {
+   "source": "/renting-audi-a1",
+   "destination": "https://movilease.es/renting-audi-a1",
+   "permanent": true
+  },
+  {
+   "source": "/renting-audi-a1/",
+   "destination": "https://movilease.es/renting-audi-a1",
+   "permanent": true
+  },
+  {
+   "source": "/renting-audi-a1/index.html",
+   "destination": "https://movilease.es/renting-audi-a1",
+   "permanent": true
+  },
+  {
+   "source": "/renting-mazda-2",
+   "destination": "https://movilease.es/renting-mazda-2",
+   "permanent": true
+  },
+  {
+   "source": "/renting-mazda-2/",
+   "destination": "https://movilease.es/renting-mazda-2",
+   "permanent": true
+  },
+  {
+   "source": "/renting-mazda-2/index.html",
+   "destination": "https://movilease.es/renting-mazda-2",
+   "permanent": true
+  },
+  {
+   "source": "/renting-mazda-3",
+   "destination": "https://movilease.es/renting-mazda-3",
+   "permanent": true
+  },
+  {
+   "source": "/renting-mazda-3/",
+   "destination": "https://movilease.es/renting-mazda-3",
+   "permanent": true
+  },
+  {
+   "source": "/renting-mazda-3/index.html",
+   "destination": "https://movilease.es/renting-mazda-3",
+   "permanent": true
+  },
+  {
+   "source": "/renting-seat-leon",
+   "destination": "https://movilease.es/renting-seat-leon",
+   "permanent": true
+  },
+  {
+   "source": "/renting-seat-leon/",
+   "destination": "https://movilease.es/renting-seat-leon",
+   "permanent": true
+  },
+  {
+   "source": "/renting-seat-leon/index.html",
+   "destination": "https://movilease.es/renting-seat-leon",
+   "permanent": true
+  },
+  {
+   "source": "/renting-seat-leon-fr",
+   "destination": "https://movilease.es/renting-seat-leon-fr",
+   "permanent": true
+  },
+  {
+   "source": "/renting-seat-leon-fr/",
+   "destination": "https://movilease.es/renting-seat-leon-fr",
+   "permanent": true
+  },
+  {
+   "source": "/renting-seat-leon-fr/index.html",
+   "destination": "https://movilease.es/renting-seat-leon-fr",
+   "permanent": true
+  },
+  {
+   "source": "/renting-cupra-formentor",
+   "destination": "https://movilease.es/renting-cupra-formentor",
+   "permanent": true
+  },
+  {
+   "source": "/renting-cupra-formentor/",
+   "destination": "https://movilease.es/renting-cupra-formentor",
+   "permanent": true
+  },
+  {
+   "source": "/renting-cupra-formentor/index.html",
+   "destination": "https://movilease.es/renting-cupra-formentor",
+   "permanent": true
+  },
+  {
+   "source": "/renting-toyota-c-hr",
+   "destination": "https://movilease.es/renting-toyota-c-hr",
+   "permanent": true
+  },
+  {
+   "source": "/renting-toyota-c-hr/",
+   "destination": "https://movilease.es/renting-toyota-c-hr",
+   "permanent": true
+  },
+  {
+   "source": "/renting-toyota-c-hr/index.html",
+   "destination": "https://movilease.es/renting-toyota-c-hr",
+   "permanent": true
+  },
+  {
+   "source": "/renting-mazda-cx-60",
+   "destination": "https://movilease.es/renting-mazda-cx-60",
+   "permanent": true
+  },
+  {
+   "source": "/renting-mazda-cx-60/",
+   "destination": "https://movilease.es/renting-mazda-cx-60",
+   "permanent": true
+  },
+  {
+   "source": "/renting-mazda-cx-60/index.html",
+   "destination": "https://movilease.es/renting-mazda-cx-60",
+   "permanent": true
+  },
+  {
+   "source": "/renting-mg-hs",
+   "destination": "https://movilease.es/renting-mg-hs",
+   "permanent": true
+  },
+  {
+   "source": "/renting-mg-hs/",
+   "destination": "https://movilease.es/renting-mg-hs",
+   "permanent": true
+  },
+  {
+   "source": "/renting-mg-hs/index.html",
+   "destination": "https://movilease.es/renting-mg-hs",
+   "permanent": true
+  },
+  {
+   "source": "/renting-honda-cr-v",
+   "destination": "https://movilease.es/renting-honda-cr-v",
+   "permanent": true
+  },
+  {
+   "source": "/renting-honda-cr-v/",
+   "destination": "https://movilease.es/renting-honda-cr-v",
+   "permanent": true
+  },
+  {
+   "source": "/renting-honda-cr-v/index.html",
+   "destination": "https://movilease.es/renting-honda-cr-v",
+   "permanent": true
+  },
+  {
+   "source": "/renting-jaecoo-5",
+   "destination": "https://movilease.es/renting-jaecoo-5",
+   "permanent": true
+  },
+  {
+   "source": "/renting-jaecoo-5/",
+   "destination": "https://movilease.es/renting-jaecoo-5",
+   "permanent": true
+  },
+  {
+   "source": "/renting-jaecoo-5/index.html",
+   "destination": "https://movilease.es/renting-jaecoo-5",
+   "permanent": true
+  },
+  {
+   "source": "/renting-jaecoo-7",
+   "destination": "https://movilease.es/renting-jaecoo-7",
+   "permanent": true
+  },
+  {
+   "source": "/renting-jaecoo-7/",
+   "destination": "https://movilease.es/renting-jaecoo-7",
+   "permanent": true
+  },
+  {
+   "source": "/renting-jaecoo-7/index.html",
+   "destination": "https://movilease.es/renting-jaecoo-7",
+   "permanent": true
+  },
+  {
+   "source": "/renting-omoda-5",
+   "destination": "https://movilease.es/renting-omoda-5",
+   "permanent": true
+  },
+  {
+   "source": "/renting-omoda-5/",
+   "destination": "https://movilease.es/renting-omoda-5",
+   "permanent": true
+  },
+  {
+   "source": "/renting-omoda-5/index.html",
+   "destination": "https://movilease.es/renting-omoda-5",
+   "permanent": true
+  },
+  {
+   "source": "/renting-omoda-7",
+   "destination": "https://movilease.es/renting-omoda-7",
+   "permanent": true
+  },
+  {
+   "source": "/renting-omoda-7/",
+   "destination": "https://movilease.es/renting-omoda-7",
+   "permanent": true
+  },
+  {
+   "source": "/renting-omoda-7/index.html",
+   "destination": "https://movilease.es/renting-omoda-7",
+   "permanent": true
+  },
+  {
+   "source": "/renting-toyota-hilux",
+   "destination": "https://movilease.es/renting-toyota-hilux",
+   "permanent": true
+  },
+  {
+   "source": "/renting-toyota-hilux/",
+   "destination": "https://movilease.es/renting-toyota-hilux",
+   "permanent": true
+  },
+  {
+   "source": "/renting-toyota-hilux/index.html",
+   "destination": "https://movilease.es/renting-toyota-hilux",
+   "permanent": true
+  },
+  {
+   "source": "/renting-kia-niro",
+   "destination": "https://movilease.es/renting-kia-niro",
+   "permanent": true
+  },
+  {
+   "source": "/renting-kia-niro/",
+   "destination": "https://movilease.es/renting-kia-niro",
+   "permanent": true
+  },
+  {
+   "source": "/renting-kia-niro/index.html",
+   "destination": "https://movilease.es/renting-kia-niro",
+   "permanent": true
+  },
+  {
+   "source": "/renting-kia-stonic",
+   "destination": "https://movilease.es/renting-kia-stonic",
+   "permanent": true
+  },
+  {
+   "source": "/renting-kia-stonic/",
+   "destination": "https://movilease.es/renting-kia-stonic",
+   "permanent": true
+  },
+  {
+   "source": "/renting-kia-stonic/index.html",
+   "destination": "https://movilease.es/renting-kia-stonic",
+   "permanent": true
+  },
+  {
    "source": "/renting-audi-a3-sportback",
-   "destination": "/",
+   "destination": "https://movilease.es/catalogo",
    "permanent": false
   },
   {
    "source": "/renting-audi-a3-sportback/",
-   "destination": "/",
+   "destination": "https://movilease.es/catalogo",
    "permanent": false
   },
   {
-   "source": "/renting-fiat-ducato",
-   "destination": "/",
-   "permanent": false
-  },
-  {
-   "source": "/renting-fiat-ducato/",
-   "destination": "/",
-   "permanent": false
-  },
-  {
-   "source": "/renting-foton-tunland",
-   "destination": "/",
-   "permanent": false
-  },
-  {
-   "source": "/renting-foton-tunland/",
-   "destination": "/",
-   "permanent": false
-  },
-  {
-   "source": "/renting-hyundai-kona",
-   "destination": "/",
-   "permanent": false
-  },
-  {
-   "source": "/renting-hyundai-kona/",
-   "destination": "/",
-   "permanent": false
-  },
-  {
-   "source": "/renting-jeep-avenger",
-   "destination": "/",
-   "permanent": false
-  },
-  {
-   "source": "/renting-jeep-avenger/",
-   "destination": "/",
-   "permanent": false
-  },
-  {
-   "source": "/renting-kgm-korando",
-   "destination": "/",
-   "permanent": false
-  },
-  {
-   "source": "/renting-kgm-korando/",
-   "destination": "/",
-   "permanent": false
-  },
-  {
-   "source": "/renting-kgm-musso",
-   "destination": "/",
-   "permanent": false
-  },
-  {
-   "source": "/renting-kgm-musso/",
-   "destination": "/",
-   "permanent": false
-  },
-  {
-   "source": "/renting-kgm-rexton",
-   "destination": "/",
-   "permanent": false
-  },
-  {
-   "source": "/renting-kgm-rexton/",
-   "destination": "/",
-   "permanent": false
-  },
-  {
-   "source": "/renting-kgm-tivoli",
-   "destination": "/",
-   "permanent": false
-  },
-  {
-   "source": "/renting-kgm-tivoli/",
-   "destination": "/",
-   "permanent": false
-  },
-  {
-   "source": "/renting-maxus-deliver-9",
-   "destination": "/",
-   "permanent": false
-  },
-  {
-   "source": "/renting-maxus-deliver-9/",
-   "destination": "/",
-   "permanent": false
-  },
-  {
-   "source": "/renting-maxus-t60-max",
-   "destination": "/",
-   "permanent": false
-  },
-  {
-   "source": "/renting-maxus-t60-max/",
-   "destination": "/",
-   "permanent": false
-  },
-  {
-   "source": "/renting-mazda-6e",
-   "destination": "/",
-   "permanent": false
-  },
-  {
-   "source": "/renting-mazda-6e/",
-   "destination": "/",
-   "permanent": false
-  },
-  {
-   "source": "/renting-mercedes-citan-mixta",
-   "destination": "/",
-   "permanent": false
-  },
-  {
-   "source": "/renting-mercedes-citan-mixta/",
-   "destination": "/",
-   "permanent": false
-  },
-  {
-   "source": "/renting-mercedes-vito",
-   "destination": "/",
-   "permanent": false
-  },
-  {
-   "source": "/renting-mercedes-vito/",
-   "destination": "/",
-   "permanent": false
-  },
-  {
-   "source": "/renting-mg-3",
-   "destination": "/",
-   "permanent": false
-  },
-  {
-   "source": "/renting-mg-3/",
-   "destination": "/",
-   "permanent": false
-  },
-  {
-   "source": "/renting-mg-zs",
-   "destination": "/",
-   "permanent": false
-  },
-  {
-   "source": "/renting-mg-zs/",
-   "destination": "/",
-   "permanent": false
-  },
-  {
-   "source": "/renting-mitsubishi-outlander",
-   "destination": "/",
-   "permanent": false
-  },
-  {
-   "source": "/renting-mitsubishi-outlander/",
-   "destination": "/",
-   "permanent": false
-  },
-  {
-   "source": "/renting-nissan-x-trail",
-   "destination": "/",
-   "permanent": false
-  },
-  {
-   "source": "/renting-nissan-x-trail/",
-   "destination": "/",
-   "permanent": false
-  },
-  {
-   "source": "/renting-omoda-9",
-   "destination": "/",
-   "permanent": false
-  },
-  {
-   "source": "/renting-omoda-9/",
-   "destination": "/",
-   "permanent": false
-  },
-  {
-   "source": "/renting-opel-combo",
-   "destination": "/",
-   "permanent": false
-  },
-  {
-   "source": "/renting-opel-combo/",
-   "destination": "/",
-   "permanent": false
-  },
-  {
-   "source": "/renting-peugeot-partner",
-   "destination": "/",
-   "permanent": false
-  },
-  {
-   "source": "/renting-peugeot-partner/",
-   "destination": "/",
-   "permanent": false
-  },
-  {
-   "source": "/renting-renault-espace",
-   "destination": "/",
-   "permanent": false
-  },
-  {
-   "source": "/renting-renault-espace/",
-   "destination": "/",
-   "permanent": false
-  },
-  {
-   "source": "/renting-renault-rafale",
-   "destination": "/",
-   "permanent": false
-  },
-  {
-   "source": "/renting-renault-rafale/",
-   "destination": "/",
-   "permanent": false
-  },
-  {
-   "source": "/renting-renault-symbioz",
-   "destination": "/",
-   "permanent": false
-  },
-  {
-   "source": "/renting-renault-symbioz/",
-   "destination": "/",
-   "permanent": false
-  },
-  {
-   "source": "/renting-seat-arona",
-   "destination": "/",
-   "permanent": false
-  },
-  {
-   "source": "/renting-seat-arona/",
-   "destination": "/",
-   "permanent": false
-  },
-  {
-   "source": "/renting-skoda-elroq",
-   "destination": "/",
-   "permanent": false
-  },
-  {
-   "source": "/renting-skoda-elroq/",
-   "destination": "/",
-   "permanent": false
-  },
-  {
-   "source": "/renting-skoda-karoq",
-   "destination": "/",
-   "permanent": false
-  },
-  {
-   "source": "/renting-skoda-karoq/",
-   "destination": "/",
-   "permanent": false
-  },
-  {
-   "source": "/renting-skoda-octavia",
-   "destination": "/",
-   "permanent": false
-  },
-  {
-   "source": "/renting-skoda-octavia/",
-   "destination": "/",
-   "permanent": false
-  },
-  {
-   "source": "/renting-subaru-crosstrek",
-   "destination": "/",
-   "permanent": false
-  },
-  {
-   "source": "/renting-subaru-crosstrek/",
-   "destination": "/",
-   "permanent": false
-  },
-  {
-   "source": "/renting-subaru-forester",
-   "destination": "/",
-   "permanent": false
-  },
-  {
-   "source": "/renting-subaru-forester/",
-   "destination": "/",
-   "permanent": false
-  },
-  {
-   "source": "/renting-subaru-outback",
-   "destination": "/",
-   "permanent": false
-  },
-  {
-   "source": "/renting-subaru-outback/",
-   "destination": "/",
-   "permanent": false
-  },
-  {
-   "source": "/renting-toyota-proace",
-   "destination": "/",
-   "permanent": false
-  },
-  {
-   "source": "/renting-toyota-proace/",
-   "destination": "/",
-   "permanent": false
-  },
-  {
-   "source": "/renting-volkswagen-golf",
-   "destination": "/",
-   "permanent": false
-  },
-  {
-   "source": "/renting-volkswagen-golf/",
-   "destination": "/",
-   "permanent": false
-  },
-  {
-   "source": "/renting-volkswagen-t-cross",
-   "destination": "/",
-   "permanent": false
-  },
-  {
-   "source": "/renting-volkswagen-t-cross/",
-   "destination": "/",
-   "permanent": false
-  },
-  {
-   "source": "/renting-volkswagen-t-roc",
-   "destination": "/",
-   "permanent": false
-  },
-  {
-   "source": "/renting-volkswagen-t-roc/",
-   "destination": "/",
+   "source": "/renting-audi-a3-sportback/index.html",
+   "destination": "https://movilease.es/catalogo",
    "permanent": false
   },
   {
    "source": "/renting-cupra-formentor-manual",
-   "destination": "/",
+   "destination": "https://movilease.es/catalogo",
    "permanent": false
   },
   {
    "source": "/renting-cupra-formentor-manual/",
-   "destination": "/",
+   "destination": "https://movilease.es/catalogo",
+   "permanent": false
+  },
+  {
+   "source": "/renting-cupra-formentor-manual/index.html",
+   "destination": "https://movilease.es/catalogo",
+   "permanent": false
+  },
+  {
+   "source": "/renting-fiat-ducato",
+   "destination": "https://movilease.es/catalogo",
+   "permanent": false
+  },
+  {
+   "source": "/renting-fiat-ducato/",
+   "destination": "https://movilease.es/catalogo",
+   "permanent": false
+  },
+  {
+   "source": "/renting-fiat-ducato/index.html",
+   "destination": "https://movilease.es/catalogo",
+   "permanent": false
+  },
+  {
+   "source": "/renting-foton-tunland",
+   "destination": "https://movilease.es/catalogo",
+   "permanent": false
+  },
+  {
+   "source": "/renting-foton-tunland/",
+   "destination": "https://movilease.es/catalogo",
+   "permanent": false
+  },
+  {
+   "source": "/renting-foton-tunland/index.html",
+   "destination": "https://movilease.es/catalogo",
+   "permanent": false
+  },
+  {
+   "source": "/renting-hyundai-kona",
+   "destination": "https://movilease.es/catalogo",
+   "permanent": false
+  },
+  {
+   "source": "/renting-hyundai-kona/",
+   "destination": "https://movilease.es/catalogo",
+   "permanent": false
+  },
+  {
+   "source": "/renting-hyundai-kona/index.html",
+   "destination": "https://movilease.es/catalogo",
    "permanent": false
   },
   {
    "source": "/renting-hyundai-tucson",
-   "destination": "/",
+   "destination": "https://movilease.es/catalogo",
    "permanent": false
   },
   {
    "source": "/renting-hyundai-tucson/",
-   "destination": "/",
+   "destination": "https://movilease.es/catalogo",
    "permanent": false
+  },
+  {
+   "source": "/renting-hyundai-tucson/index.html",
+   "destination": "https://movilease.es/catalogo",
+   "permanent": false
+  },
+  {
+   "source": "/renting-jeep-avenger",
+   "destination": "https://movilease.es/catalogo",
+   "permanent": false
+  },
+  {
+   "source": "/renting-jeep-avenger/",
+   "destination": "https://movilease.es/catalogo",
+   "permanent": false
+  },
+  {
+   "source": "/renting-jeep-avenger/index.html",
+   "destination": "https://movilease.es/catalogo",
+   "permanent": false
+  },
+  {
+   "source": "/renting-kgm-korando",
+   "destination": "https://movilease.es/catalogo",
+   "permanent": false
+  },
+  {
+   "source": "/renting-kgm-korando/",
+   "destination": "https://movilease.es/catalogo",
+   "permanent": false
+  },
+  {
+   "source": "/renting-kgm-korando/index.html",
+   "destination": "https://movilease.es/catalogo",
+   "permanent": false
+  },
+  {
+   "source": "/renting-kgm-musso",
+   "destination": "https://movilease.es/catalogo",
+   "permanent": false
+  },
+  {
+   "source": "/renting-kgm-musso/",
+   "destination": "https://movilease.es/catalogo",
+   "permanent": false
+  },
+  {
+   "source": "/renting-kgm-musso/index.html",
+   "destination": "https://movilease.es/catalogo",
+   "permanent": false
+  },
+  {
+   "source": "/renting-kgm-rexton",
+   "destination": "https://movilease.es/catalogo",
+   "permanent": false
+  },
+  {
+   "source": "/renting-kgm-rexton/",
+   "destination": "https://movilease.es/catalogo",
+   "permanent": false
+  },
+  {
+   "source": "/renting-kgm-rexton/index.html",
+   "destination": "https://movilease.es/catalogo",
+   "permanent": false
+  },
+  {
+   "source": "/renting-kgm-tivoli",
+   "destination": "https://movilease.es/catalogo",
+   "permanent": false
+  },
+  {
+   "source": "/renting-kgm-tivoli/",
+   "destination": "https://movilease.es/catalogo",
+   "permanent": false
+  },
+  {
+   "source": "/renting-kgm-tivoli/index.html",
+   "destination": "https://movilease.es/catalogo",
+   "permanent": false
+  },
+  {
+   "source": "/renting-maxus-deliver-9",
+   "destination": "https://movilease.es/catalogo",
+   "permanent": false
+  },
+  {
+   "source": "/renting-maxus-deliver-9/",
+   "destination": "https://movilease.es/catalogo",
+   "permanent": false
+  },
+  {
+   "source": "/renting-maxus-deliver-9/index.html",
+   "destination": "https://movilease.es/catalogo",
+   "permanent": false
+  },
+  {
+   "source": "/renting-maxus-t60-max",
+   "destination": "https://movilease.es/catalogo",
+   "permanent": false
+  },
+  {
+   "source": "/renting-maxus-t60-max/",
+   "destination": "https://movilease.es/catalogo",
+   "permanent": false
+  },
+  {
+   "source": "/renting-maxus-t60-max/index.html",
+   "destination": "https://movilease.es/catalogo",
+   "permanent": false
+  },
+  {
+   "source": "/renting-mazda-6e",
+   "destination": "https://movilease.es/catalogo",
+   "permanent": false
+  },
+  {
+   "source": "/renting-mazda-6e/",
+   "destination": "https://movilease.es/catalogo",
+   "permanent": false
+  },
+  {
+   "source": "/renting-mazda-6e/index.html",
+   "destination": "https://movilease.es/catalogo",
+   "permanent": false
+  },
+  {
+   "source": "/renting-mercedes-citan-mixta",
+   "destination": "https://movilease.es/catalogo",
+   "permanent": false
+  },
+  {
+   "source": "/renting-mercedes-citan-mixta/",
+   "destination": "https://movilease.es/catalogo",
+   "permanent": false
+  },
+  {
+   "source": "/renting-mercedes-citan-mixta/index.html",
+   "destination": "https://movilease.es/catalogo",
+   "permanent": false
+  },
+  {
+   "source": "/renting-mercedes-vito",
+   "destination": "https://movilease.es/catalogo",
+   "permanent": false
+  },
+  {
+   "source": "/renting-mercedes-vito/",
+   "destination": "https://movilease.es/catalogo",
+   "permanent": false
+  },
+  {
+   "source": "/renting-mercedes-vito/index.html",
+   "destination": "https://movilease.es/catalogo",
+   "permanent": false
+  },
+  {
+   "source": "/renting-mg-3",
+   "destination": "https://movilease.es/catalogo",
+   "permanent": false
+  },
+  {
+   "source": "/renting-mg-3/",
+   "destination": "https://movilease.es/catalogo",
+   "permanent": false
+  },
+  {
+   "source": "/renting-mg-3/index.html",
+   "destination": "https://movilease.es/catalogo",
+   "permanent": false
+  },
+  {
+   "source": "/renting-mg-zs",
+   "destination": "https://movilease.es/catalogo",
+   "permanent": false
+  },
+  {
+   "source": "/renting-mg-zs/",
+   "destination": "https://movilease.es/catalogo",
+   "permanent": false
+  },
+  {
+   "source": "/renting-mg-zs/index.html",
+   "destination": "https://movilease.es/catalogo",
+   "permanent": false
+  },
+  {
+   "source": "/renting-mitsubishi-outlander",
+   "destination": "https://movilease.es/catalogo",
+   "permanent": false
+  },
+  {
+   "source": "/renting-mitsubishi-outlander/",
+   "destination": "https://movilease.es/catalogo",
+   "permanent": false
+  },
+  {
+   "source": "/renting-mitsubishi-outlander/index.html",
+   "destination": "https://movilease.es/catalogo",
+   "permanent": false
+  },
+  {
+   "source": "/renting-nissan-x-trail",
+   "destination": "https://movilease.es/catalogo",
+   "permanent": false
+  },
+  {
+   "source": "/renting-nissan-x-trail/",
+   "destination": "https://movilease.es/catalogo",
+   "permanent": false
+  },
+  {
+   "source": "/renting-nissan-x-trail/index.html",
+   "destination": "https://movilease.es/catalogo",
+   "permanent": false
+  },
+  {
+   "source": "/renting-omoda-9",
+   "destination": "https://movilease.es/catalogo",
+   "permanent": false
+  },
+  {
+   "source": "/renting-omoda-9/",
+   "destination": "https://movilease.es/catalogo",
+   "permanent": false
+  },
+  {
+   "source": "/renting-omoda-9/index.html",
+   "destination": "https://movilease.es/catalogo",
+   "permanent": false
+  },
+  {
+   "source": "/renting-opel-combo",
+   "destination": "https://movilease.es/catalogo",
+   "permanent": false
+  },
+  {
+   "source": "/renting-opel-combo/",
+   "destination": "https://movilease.es/catalogo",
+   "permanent": false
+  },
+  {
+   "source": "/renting-opel-combo/index.html",
+   "destination": "https://movilease.es/catalogo",
+   "permanent": false
+  },
+  {
+   "source": "/renting-peugeot-partner",
+   "destination": "https://movilease.es/catalogo",
+   "permanent": false
+  },
+  {
+   "source": "/renting-peugeot-partner/",
+   "destination": "https://movilease.es/catalogo",
+   "permanent": false
+  },
+  {
+   "source": "/renting-peugeot-partner/index.html",
+   "destination": "https://movilease.es/catalogo",
+   "permanent": false
+  },
+  {
+   "source": "/renting-renault-espace",
+   "destination": "https://movilease.es/catalogo",
+   "permanent": false
+  },
+  {
+   "source": "/renting-renault-espace/",
+   "destination": "https://movilease.es/catalogo",
+   "permanent": false
+  },
+  {
+   "source": "/renting-renault-espace/index.html",
+   "destination": "https://movilease.es/catalogo",
+   "permanent": false
+  },
+  {
+   "source": "/renting-renault-rafale",
+   "destination": "https://movilease.es/catalogo",
+   "permanent": false
+  },
+  {
+   "source": "/renting-renault-rafale/",
+   "destination": "https://movilease.es/catalogo",
+   "permanent": false
+  },
+  {
+   "source": "/renting-renault-rafale/index.html",
+   "destination": "https://movilease.es/catalogo",
+   "permanent": false
+  },
+  {
+   "source": "/renting-renault-symbioz",
+   "destination": "https://movilease.es/catalogo",
+   "permanent": false
+  },
+  {
+   "source": "/renting-renault-symbioz/",
+   "destination": "https://movilease.es/catalogo",
+   "permanent": false
+  },
+  {
+   "source": "/renting-renault-symbioz/index.html",
+   "destination": "https://movilease.es/catalogo",
+   "permanent": false
+  },
+  {
+   "source": "/renting-seat-arona",
+   "destination": "https://movilease.es/catalogo",
+   "permanent": false
+  },
+  {
+   "source": "/renting-seat-arona/",
+   "destination": "https://movilease.es/catalogo",
+   "permanent": false
+  },
+  {
+   "source": "/renting-seat-arona/index.html",
+   "destination": "https://movilease.es/catalogo",
+   "permanent": false
+  },
+  {
+   "source": "/renting-skoda-elroq",
+   "destination": "https://movilease.es/catalogo",
+   "permanent": false
+  },
+  {
+   "source": "/renting-skoda-elroq/",
+   "destination": "https://movilease.es/catalogo",
+   "permanent": false
+  },
+  {
+   "source": "/renting-skoda-elroq/index.html",
+   "destination": "https://movilease.es/catalogo",
+   "permanent": false
+  },
+  {
+   "source": "/renting-skoda-karoq",
+   "destination": "https://movilease.es/catalogo",
+   "permanent": false
+  },
+  {
+   "source": "/renting-skoda-karoq/",
+   "destination": "https://movilease.es/catalogo",
+   "permanent": false
+  },
+  {
+   "source": "/renting-skoda-karoq/index.html",
+   "destination": "https://movilease.es/catalogo",
+   "permanent": false
+  },
+  {
+   "source": "/renting-skoda-octavia",
+   "destination": "https://movilease.es/catalogo",
+   "permanent": false
+  },
+  {
+   "source": "/renting-skoda-octavia/",
+   "destination": "https://movilease.es/catalogo",
+   "permanent": false
+  },
+  {
+   "source": "/renting-skoda-octavia/index.html",
+   "destination": "https://movilease.es/catalogo",
+   "permanent": false
+  },
+  {
+   "source": "/renting-subaru-crosstrek",
+   "destination": "https://movilease.es/catalogo",
+   "permanent": false
+  },
+  {
+   "source": "/renting-subaru-crosstrek/",
+   "destination": "https://movilease.es/catalogo",
+   "permanent": false
+  },
+  {
+   "source": "/renting-subaru-crosstrek/index.html",
+   "destination": "https://movilease.es/catalogo",
+   "permanent": false
+  },
+  {
+   "source": "/renting-subaru-forester",
+   "destination": "https://movilease.es/catalogo",
+   "permanent": false
+  },
+  {
+   "source": "/renting-subaru-forester/",
+   "destination": "https://movilease.es/catalogo",
+   "permanent": false
+  },
+  {
+   "source": "/renting-subaru-forester/index.html",
+   "destination": "https://movilease.es/catalogo",
+   "permanent": false
+  },
+  {
+   "source": "/renting-subaru-outback",
+   "destination": "https://movilease.es/catalogo",
+   "permanent": false
+  },
+  {
+   "source": "/renting-subaru-outback/",
+   "destination": "https://movilease.es/catalogo",
+   "permanent": false
+  },
+  {
+   "source": "/renting-subaru-outback/index.html",
+   "destination": "https://movilease.es/catalogo",
+   "permanent": false
+  },
+  {
+   "source": "/renting-toyota-proace",
+   "destination": "https://movilease.es/catalogo",
+   "permanent": false
+  },
+  {
+   "source": "/renting-toyota-proace/",
+   "destination": "https://movilease.es/catalogo",
+   "permanent": false
+  },
+  {
+   "source": "/renting-toyota-proace/index.html",
+   "destination": "https://movilease.es/catalogo",
+   "permanent": false
+  },
+  {
+   "source": "/renting-volkswagen-golf",
+   "destination": "https://movilease.es/catalogo",
+   "permanent": false
+  },
+  {
+   "source": "/renting-volkswagen-golf/",
+   "destination": "https://movilease.es/catalogo",
+   "permanent": false
+  },
+  {
+   "source": "/renting-volkswagen-golf/index.html",
+   "destination": "https://movilease.es/catalogo",
+   "permanent": false
+  },
+  {
+   "source": "/renting-volkswagen-t-cross",
+   "destination": "https://movilease.es/catalogo",
+   "permanent": false
+  },
+  {
+   "source": "/renting-volkswagen-t-cross/",
+   "destination": "https://movilease.es/catalogo",
+   "permanent": false
+  },
+  {
+   "source": "/renting-volkswagen-t-cross/index.html",
+   "destination": "https://movilease.es/catalogo",
+   "permanent": false
+  },
+  {
+   "source": "/renting-volkswagen-t-roc",
+   "destination": "https://movilease.es/catalogo",
+   "permanent": false
+  },
+  {
+   "source": "/renting-volkswagen-t-roc/",
+   "destination": "https://movilease.es/catalogo",
+   "permanent": false
+  },
+  {
+   "source": "/renting-volkswagen-t-roc/index.html",
+   "destination": "https://movilease.es/catalogo",
+   "permanent": false
+  },
+  {
+   "source": "/((?!api/|fotos/|videos/|googleacde89a916f33c87\\.html|robots\\.txt|sitemap\\.xml).*)",
+   "destination": "https://movilease.es/",
+   "permanent": true
   }
  ],
  "headers": [
