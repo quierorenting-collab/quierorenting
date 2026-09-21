@@ -1397,33 +1397,33 @@
   },
   {
    "source": "/renting-mg-3",
-   "destination": "https://movilease.es/catalogo",
-   "permanent": false
+   "destination": "https://movilease.es/renting-mg-3",
+   "permanent": true
   },
   {
    "source": "/renting-mg-3/",
-   "destination": "https://movilease.es/catalogo",
-   "permanent": false
+   "destination": "https://movilease.es/renting-mg-3",
+   "permanent": true
   },
   {
    "source": "/renting-mg-3/index.html",
-   "destination": "https://movilease.es/catalogo",
-   "permanent": false
+   "destination": "https://movilease.es/renting-mg-3",
+   "permanent": true
   },
   {
    "source": "/renting-mg-zs",
-   "destination": "https://movilease.es/catalogo",
-   "permanent": false
+   "destination": "https://movilease.es/renting-mg-zs",
+   "permanent": true
   },
   {
    "source": "/renting-mg-zs/",
-   "destination": "https://movilease.es/catalogo",
-   "permanent": false
+   "destination": "https://movilease.es/renting-mg-zs",
+   "permanent": true
   },
   {
    "source": "/renting-mg-zs/index.html",
-   "destination": "https://movilease.es/catalogo",
-   "permanent": false
+   "destination": "https://movilease.es/renting-mg-zs",
+   "permanent": true
   },
   {
    "source": "/renting-mitsubishi-outlander",
