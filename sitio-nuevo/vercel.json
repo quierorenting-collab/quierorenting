@@ -1667,18 +1667,18 @@
   },
   {
    "source": "/renting-volkswagen-golf",
-   "destination": "https://movilease.es/catalogo",
-   "permanent": false
+   "destination": "https://movilease.es/renting-volkswagen-golf",
+   "permanent": true
   },
   {
    "source": "/renting-volkswagen-golf/",
-   "destination": "https://movilease.es/catalogo",
-   "permanent": false
+   "destination": "https://movilease.es/renting-volkswagen-golf",
+   "permanent": true
   },
   {
    "source": "/renting-volkswagen-golf/index.html",
-   "destination": "https://movilease.es/catalogo",
-   "permanent": false
+   "destination": "https://movilease.es/renting-volkswagen-golf",
+   "permanent": true
   },
   {
    "source": "/renting-volkswagen-t-cross",
@@ -1709,6 +1709,21 @@
    "source": "/renting-volkswagen-t-roc/index.html",
    "destination": "https://movilease.es/catalogo",
    "permanent": false
+  },
+  {
+   "source": "/renting-ford-kuga",
+   "destination": "https://movilease.es/renting-ford-kuga",
+   "permanent": true
+  },
+  {
+   "source": "/renting-ford-kuga/",
+   "destination": "https://movilease.es/renting-ford-kuga",
+   "permanent": true
+  },
+  {
+   "source": "/renting-ford-kuga/index.html",
+   "destination": "https://movilease.es/renting-ford-kuga",
+   "permanent": true
   },
   {
    "source": "/((?!api/|fotos/|videos/|googleacde89a916f33c87\\.html|robots\\.txt|sitemap\\.xml).*)",
