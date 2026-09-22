@@ -1726,6 +1726,216 @@
    "permanent": true
   },
   {
+   "source": "/renting-jaecoo-8",
+   "destination": "https://movilease.es/renting-jaecoo-8",
+   "permanent": true
+  },
+  {
+   "source": "/renting-jaecoo-8/",
+   "destination": "https://movilease.es/renting-jaecoo-8",
+   "permanent": true
+  },
+  {
+   "source": "/renting-jaecoo-8/index.html",
+   "destination": "https://movilease.es/renting-jaecoo-8",
+   "permanent": true
+  },
+  {
+   "source": "/renting-kia-pv5-passenger",
+   "destination": "https://movilease.es/renting-kia-pv5-passenger",
+   "permanent": true
+  },
+  {
+   "source": "/renting-kia-pv5-passenger/",
+   "destination": "https://movilease.es/renting-kia-pv5-passenger",
+   "permanent": true
+  },
+  {
+   "source": "/renting-kia-pv5-passenger/index.html",
+   "destination": "https://movilease.es/renting-kia-pv5-passenger",
+   "permanent": true
+  },
+  {
+   "source": "/renting-kia-pv5-cargo",
+   "destination": "https://movilease.es/renting-kia-pv5-cargo",
+   "permanent": true
+  },
+  {
+   "source": "/renting-kia-pv5-cargo/",
+   "destination": "https://movilease.es/renting-kia-pv5-cargo",
+   "permanent": true
+  },
+  {
+   "source": "/renting-kia-pv5-cargo/index.html",
+   "destination": "https://movilease.es/renting-kia-pv5-cargo",
+   "permanent": true
+  },
+  {
+   "source": "/renting-mini-cooper",
+   "destination": "https://movilease.es/renting-mini-cooper",
+   "permanent": true
+  },
+  {
+   "source": "/renting-mini-cooper/",
+   "destination": "https://movilease.es/renting-mini-cooper",
+   "permanent": true
+  },
+  {
+   "source": "/renting-mini-cooper/index.html",
+   "destination": "https://movilease.es/renting-mini-cooper",
+   "permanent": true
+  },
+  {
+   "source": "/renting-opel-frontera",
+   "destination": "https://movilease.es/renting-opel-frontera",
+   "permanent": true
+  },
+  {
+   "source": "/renting-opel-frontera/",
+   "destination": "https://movilease.es/renting-opel-frontera",
+   "permanent": true
+  },
+  {
+   "source": "/renting-opel-frontera/index.html",
+   "destination": "https://movilease.es/renting-opel-frontera",
+   "permanent": true
+  },
+  {
+   "source": "/renting-skoda-kamiq",
+   "destination": "https://movilease.es/renting-skoda-kamiq",
+   "permanent": true
+  },
+  {
+   "source": "/renting-skoda-kamiq/",
+   "destination": "https://movilease.es/renting-skoda-kamiq",
+   "permanent": true
+  },
+  {
+   "source": "/renting-skoda-kamiq/index.html",
+   "destination": "https://movilease.es/renting-skoda-kamiq",
+   "permanent": true
+  },
+  {
+   "source": "/renting-mercedes-benz-citan",
+   "destination": "https://movilease.es/renting-mercedes-benz-citan",
+   "permanent": true
+  },
+  {
+   "source": "/renting-mercedes-benz-citan/",
+   "destination": "https://movilease.es/renting-mercedes-benz-citan",
+   "permanent": true
+  },
+  {
+   "source": "/renting-mercedes-benz-citan/index.html",
+   "destination": "https://movilease.es/renting-mercedes-benz-citan",
+   "permanent": true
+  },
+  {
+   "source": "/renting-mercedes-benz-gla",
+   "destination": "https://movilease.es/renting-mercedes-benz-gla",
+   "permanent": true
+  },
+  {
+   "source": "/renting-mercedes-benz-gla/",
+   "destination": "https://movilease.es/renting-mercedes-benz-gla",
+   "permanent": true
+  },
+  {
+   "source": "/renting-mercedes-benz-gla/index.html",
+   "destination": "https://movilease.es/renting-mercedes-benz-gla",
+   "permanent": true
+  },
+  {
+   "source": "/renting-mercedes-benz-glc-coupe",
+   "destination": "https://movilease.es/renting-mercedes-benz-glc-coupe",
+   "permanent": true
+  },
+  {
+   "source": "/renting-mercedes-benz-glc-coupe/",
+   "destination": "https://movilease.es/renting-mercedes-benz-glc-coupe",
+   "permanent": true
+  },
+  {
+   "source": "/renting-mercedes-benz-glc-coupe/index.html",
+   "destination": "https://movilease.es/renting-mercedes-benz-glc-coupe",
+   "permanent": true
+  },
+  {
+   "source": "/renting-mercedes-benz-gle-coupe",
+   "destination": "https://movilease.es/renting-mercedes-benz-gle-coupe",
+   "permanent": true
+  },
+  {
+   "source": "/renting-mercedes-benz-gle-coupe/",
+   "destination": "https://movilease.es/renting-mercedes-benz-gle-coupe",
+   "permanent": true
+  },
+  {
+   "source": "/renting-mercedes-benz-gle-coupe/index.html",
+   "destination": "https://movilease.es/renting-mercedes-benz-gle-coupe",
+   "permanent": true
+  },
+  {
+   "source": "/renting-mercedes-benz-gle-350d-coupe",
+   "destination": "https://movilease.es/renting-mercedes-benz-gle-350d-coupe",
+   "permanent": true
+  },
+  {
+   "source": "/renting-mercedes-benz-gle-350d-coupe/",
+   "destination": "https://movilease.es/renting-mercedes-benz-gle-350d-coupe",
+   "permanent": true
+  },
+  {
+   "source": "/renting-mercedes-benz-gle-350d-coupe/index.html",
+   "destination": "https://movilease.es/renting-mercedes-benz-gle-350d-coupe",
+   "permanent": true
+  },
+  {
+   "source": "/renting-opel-combo-cargo",
+   "destination": "https://movilease.es/renting-opel-combo-cargo",
+   "permanent": true
+  },
+  {
+   "source": "/renting-opel-combo-cargo/",
+   "destination": "https://movilease.es/renting-opel-combo-cargo",
+   "permanent": true
+  },
+  {
+   "source": "/renting-opel-combo-cargo/index.html",
+   "destination": "https://movilease.es/renting-opel-combo-cargo",
+   "permanent": true
+  },
+  {
+   "source": "/renting-diesel",
+   "destination": "https://movilease.es/renting-diesel",
+   "permanent": true
+  },
+  {
+   "source": "/renting-diesel/",
+   "destination": "https://movilease.es/renting-diesel",
+   "permanent": true
+  },
+  {
+   "source": "/renting-diesel/index.html",
+   "destination": "https://movilease.es/renting-diesel",
+   "permanent": true
+  },
+  {
+   "source": "/renting-entrega-rapida",
+   "destination": "https://movilease.es/renting-entrega-rapida",
+   "permanent": true
+  },
+  {
+   "source": "/renting-entrega-rapida/",
+   "destination": "https://movilease.es/renting-entrega-rapida",
+   "permanent": true
+  },
+  {
+   "source": "/renting-entrega-rapida/index.html",
+   "destination": "https://movilease.es/renting-entrega-rapida",
+   "permanent": true
+  },
+  {
    "source": "/((?!api/|fotos/|videos/|googleacde89a916f33c87\\.html|robots\\.txt|sitemap\\.xml).*)",
    "destination": "https://movilease.es/",
    "permanent": true
