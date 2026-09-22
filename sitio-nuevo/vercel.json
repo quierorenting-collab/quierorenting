@@ -422,18 +422,18 @@
   },
   {
    "source": "/renting-volkswagen-taigo",
-   "destination": "https://movilease.es/renting-volkswagen-taigo",
-   "permanent": true
+   "destination": "https://movilease.es/catalogo",
+   "permanent": false
   },
   {
    "source": "/renting-volkswagen-taigo/",
-   "destination": "https://movilease.es/renting-volkswagen-taigo",
-   "permanent": true
+   "destination": "https://movilease.es/catalogo",
+   "permanent": false
   },
   {
    "source": "/renting-volkswagen-taigo/index.html",
-   "destination": "https://movilease.es/renting-volkswagen-taigo",
-   "permanent": true
+   "destination": "https://movilease.es/catalogo",
+   "permanent": false
   },
   {
    "source": "/renting-renault-austral",
@@ -1232,18 +1232,18 @@
   },
   {
    "source": "/renting-hyundai-tucson",
-   "destination": "https://movilease.es/renting-hyundai-tucson",
-   "permanent": true
+   "destination": "https://movilease.es/catalogo",
+   "permanent": false
   },
   {
    "source": "/renting-hyundai-tucson/",
-   "destination": "https://movilease.es/renting-hyundai-tucson",
-   "permanent": true
+   "destination": "https://movilease.es/catalogo",
+   "permanent": false
   },
   {
    "source": "/renting-hyundai-tucson/index.html",
-   "destination": "https://movilease.es/renting-hyundai-tucson",
-   "permanent": true
+   "destination": "https://movilease.es/catalogo",
+   "permanent": false
   },
   {
    "source": "/renting-jeep-avenger",
@@ -1697,18 +1697,18 @@
   },
   {
    "source": "/renting-volkswagen-t-roc",
-   "destination": "https://movilease.es/renting-volkswagen-t-roc",
-   "permanent": true
+   "destination": "https://movilease.es/catalogo",
+   "permanent": false
   },
   {
    "source": "/renting-volkswagen-t-roc/",
-   "destination": "https://movilease.es/renting-volkswagen-t-roc",
-   "permanent": true
+   "destination": "https://movilease.es/catalogo",
+   "permanent": false
   },
   {
    "source": "/renting-volkswagen-t-roc/index.html",
-   "destination": "https://movilease.es/renting-volkswagen-t-roc",
-   "permanent": true
+   "destination": "https://movilease.es/catalogo",
+   "permanent": false
   },
   {
    "source": "/renting-ford-kuga",
