@@ -1562,48 +1562,48 @@
   },
   {
    "source": "/renting-skoda-elroq",
-   "destination": "https://movilease.es/catalogo",
-   "permanent": false
+   "destination": "https://movilease.es/renting-skoda-elroq",
+   "permanent": true
   },
   {
    "source": "/renting-skoda-elroq/",
-   "destination": "https://movilease.es/catalogo",
-   "permanent": false
+   "destination": "https://movilease.es/renting-skoda-elroq",
+   "permanent": true
   },
   {
    "source": "/renting-skoda-elroq/index.html",
-   "destination": "https://movilease.es/catalogo",
-   "permanent": false
+   "destination": "https://movilease.es/renting-skoda-elroq",
+   "permanent": true
   },
   {
    "source": "/renting-skoda-karoq",
-   "destination": "https://movilease.es/catalogo",
-   "permanent": false
+   "destination": "https://movilease.es/renting-skoda-karoq",
+   "permanent": true
   },
   {
    "source": "/renting-skoda-karoq/",
-   "destination": "https://movilease.es/catalogo",
-   "permanent": false
+   "destination": "https://movilease.es/renting-skoda-karoq",
+   "permanent": true
   },
   {
    "source": "/renting-skoda-karoq/index.html",
-   "destination": "https://movilease.es/catalogo",
-   "permanent": false
+   "destination": "https://movilease.es/renting-skoda-karoq",
+   "permanent": true
   },
   {
    "source": "/renting-skoda-octavia",
-   "destination": "https://movilease.es/catalogo",
-   "permanent": false
+   "destination": "https://movilease.es/renting-skoda-octavia",
+   "permanent": true
   },
   {
    "source": "/renting-skoda-octavia/",
-   "destination": "https://movilease.es/catalogo",
-   "permanent": false
+   "destination": "https://movilease.es/renting-skoda-octavia",
+   "permanent": true
   },
   {
    "source": "/renting-skoda-octavia/index.html",
-   "destination": "https://movilease.es/catalogo",
-   "permanent": false
+   "destination": "https://movilease.es/renting-skoda-octavia",
+   "permanent": true
   },
   {
    "source": "/renting-subaru-crosstrek",
