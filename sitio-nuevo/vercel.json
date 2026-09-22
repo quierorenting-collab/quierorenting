@@ -1232,18 +1232,18 @@
   },
   {
    "source": "/renting-hyundai-tucson",
-   "destination": "https://movilease.es/catalogo",
-   "permanent": false
+   "destination": "https://movilease.es/renting-hyundai-tucson",
+   "permanent": true
   },
   {
    "source": "/renting-hyundai-tucson/",
-   "destination": "https://movilease.es/catalogo",
-   "permanent": false
+   "destination": "https://movilease.es/renting-hyundai-tucson",
+   "permanent": true
   },
   {
    "source": "/renting-hyundai-tucson/index.html",
-   "destination": "https://movilease.es/catalogo",
-   "permanent": false
+   "destination": "https://movilease.es/renting-hyundai-tucson",
+   "permanent": true
   },
   {
    "source": "/renting-jeep-avenger",
@@ -1457,33 +1457,33 @@
   },
   {
    "source": "/renting-omoda-9",
-   "destination": "https://movilease.es/catalogo",
-   "permanent": false
+   "destination": "https://movilease.es/renting-omoda-9",
+   "permanent": true
   },
   {
    "source": "/renting-omoda-9/",
-   "destination": "https://movilease.es/catalogo",
-   "permanent": false
+   "destination": "https://movilease.es/renting-omoda-9",
+   "permanent": true
   },
   {
    "source": "/renting-omoda-9/index.html",
-   "destination": "https://movilease.es/catalogo",
-   "permanent": false
+   "destination": "https://movilease.es/renting-omoda-9",
+   "permanent": true
   },
   {
    "source": "/renting-opel-combo",
-   "destination": "https://movilease.es/catalogo",
-   "permanent": false
+   "destination": "https://movilease.es/renting-opel-combo-cargo",
+   "permanent": true
   },
   {
    "source": "/renting-opel-combo/",
-   "destination": "https://movilease.es/catalogo",
-   "permanent": false
+   "destination": "https://movilease.es/renting-opel-combo-cargo",
+   "permanent": true
   },
   {
    "source": "/renting-opel-combo/index.html",
-   "destination": "https://movilease.es/catalogo",
-   "permanent": false
+   "destination": "https://movilease.es/renting-opel-combo-cargo",
+   "permanent": true
   },
   {
    "source": "/renting-peugeot-partner",
@@ -1532,18 +1532,18 @@
   },
   {
    "source": "/renting-renault-symbioz",
-   "destination": "https://movilease.es/catalogo",
-   "permanent": false
+   "destination": "https://movilease.es/renting-renault-symbioz",
+   "permanent": true
   },
   {
    "source": "/renting-renault-symbioz/",
-   "destination": "https://movilease.es/catalogo",
-   "permanent": false
+   "destination": "https://movilease.es/renting-renault-symbioz",
+   "permanent": true
   },
   {
    "source": "/renting-renault-symbioz/index.html",
-   "destination": "https://movilease.es/catalogo",
-   "permanent": false
+   "destination": "https://movilease.es/renting-renault-symbioz",
+   "permanent": true
   },
   {
    "source": "/renting-seat-arona",
@@ -1697,18 +1697,18 @@
   },
   {
    "source": "/renting-volkswagen-t-roc",
-   "destination": "https://movilease.es/catalogo",
-   "permanent": false
+   "destination": "https://movilease.es/renting-volkswagen-t-roc",
+   "permanent": true
   },
   {
    "source": "/renting-volkswagen-t-roc/",
-   "destination": "https://movilease.es/catalogo",
-   "permanent": false
+   "destination": "https://movilease.es/renting-volkswagen-t-roc",
+   "permanent": true
   },
   {
    "source": "/renting-volkswagen-t-roc/index.html",
-   "destination": "https://movilease.es/catalogo",
-   "permanent": false
+   "destination": "https://movilease.es/renting-volkswagen-t-roc",
+   "permanent": true
   },
   {
    "source": "/renting-ford-kuga",
